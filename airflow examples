@@ -1,0 +1,82 @@
+from airflow.decorators import dag, task
+
+@dag(schedule_interval=None, start_date=datetime(2021, 1, 1), catchup=False, tags=['Almuerzo'])
+def ejemplo_rutina_restaurante():
+
+    @task()
+    def pedir_menu():
+	
+        return "Por favor me trae la Carta"
+
+	@task()
+    def seleccionar_plato():
+	
+        return "Ya se que quiero comer"
+
+    @task()
+    def realizar_pedido():
+	
+        return "Quisiera pollo al curry por favor"
+
+	@task()
+    def disfrutar_los_alimentos():
+	
+        return "Excelente Cena"
+	
+	conocer_menu() >> seleccionar_plato() >> realizar_pedido() >> disfrutar_los_alimentos()
+		
+dag = ejemplo_rutina_restaurante()
+
+###################################################################################################################################
+
+
+from airflow.decorators import dag, task
+
+@dag(schedule_interval=None, start_date=datetime(2021, 1, 1), catchup=False, tags=['Almuerzo'])
+def ejemplo_grupo_hetareo():
+
+    @task()
+    def solicitar_documento_identidad(int x):
+	
+		print("Identificacion Por favor")
+	
+        return definir_grupo(x)
+		
+	@task()
+	def definir_grupo(int x):
+	
+		if(x < 18):
+			return primer_grupo()
+		else if (x < 35):
+			return segundo_grupo()
+		else if (x < 60):
+			return tercer_grupo()
+		else:
+			return ultimo_grupo()				
+			
+			
+	@task()
+    def primer_grupo():
+	
+        return "La persona es menor de 18"
+
+	@task()
+    def segundo_grupo():
+	
+        return "La persona es menor de 35"
+
+	@task()
+    def tercer_grupo():
+	
+        return "La persona es menor de 60"
+
+	@task()
+    def ultimo_grupo():
+	
+        return "La persona tiene 60 o mas"
+	
+	solicitar_documento_identidad(25) 
+	solicitar_documento_identidad() >> primer_grupo() >> ultimo_grupo()
+	solicitar_documento_identidad() >> segundo_grupo() >> tercer_grupo()
+		
+dag = ejemplo_grupo_hetareo()
