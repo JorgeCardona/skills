@@ -4,27 +4,23 @@ from airflow.decorators import dag, task
 def ejemplo_rutina_restaurante():
 
     @task()
-    def pedir_menu():
-	
+    def conocer_menu():
         return "Por favor me trae la Carta"
 
     @task()
     def seleccionar_plato():
-	
         return "Ya se que quiero comer"
 
     @task()
     def realizar_pedido():
-	
         return "Quisiera pollo al curry por favor"
 
     @task()
     def disfrutar_los_alimentos():
-	
         return "Excelente Cena"
-	
-	conocer_menu() >> seleccionar_plato() >> realizar_pedido() >> disfrutar_los_alimentos()
-		
+    
+    conocer_menu() >> seleccionar_plato() >> realizar_pedido() >> disfrutar_los_alimentos()
+
 dag = ejemplo_rutina_restaurante()
 
 ###################################################################################################################################
