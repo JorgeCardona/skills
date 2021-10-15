@@ -8,7 +8,7 @@ def ejemplo_rutina_restaurante():
 	
         return "Por favor me trae la Carta"
 
-	@task()
+    @task()
     def seleccionar_plato():
 	
         return "Ya se que quiero comer"
@@ -18,7 +18,7 @@ def ejemplo_rutina_restaurante():
 	
         return "Quisiera pollo al curry por favor"
 
-	@task()
+    @task()
     def disfrutar_los_alimentos():
 	
         return "Excelente Cena"
@@ -38,39 +38,38 @@ def ejemplo_grupo_hetareo():
     @task()
     def solicitar_documento_identidad(int x):
 	
-		print("Identificacion Por favor")
+	print("Identificacion Por favor")
 	
         return definir_grupo(x)
 		
-	@task()
-	def definir_grupo(int x):
-	
-		if(x < 18):
-			return primer_grupo()
-		else if (x < 35):
-			return segundo_grupo()
-		else if (x < 60):
-			return tercer_grupo()
-		else:
-			return ultimo_grupo()				
+    @task()
+    def definir_grupo(int x):
+
+	if(x < 18):
+		return primer_grupo()
+	else if (x < 35):
+		return segundo_grupo()
+	else if (x < 60):
+		return tercer_grupo()
+	else:
+		return ultimo_grupo()				
 			
-			
-	@task()
+    @task()
     def primer_grupo():
 	
         return "La persona es menor de 18"
 
-	@task()
+    @task()
     def segundo_grupo():
 	
         return "La persona es menor de 35"
 
-	@task()
+    @task()
     def tercer_grupo():
 	
         return "La persona es menor de 60"
 
-	@task()
+    @task()
     def ultimo_grupo():
 	
         return "La persona tiene 60 o mas"
