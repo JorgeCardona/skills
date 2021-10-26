@@ -14,6 +14,5 @@ public class SingletonPatternTestOk {
         }
 
         return objetoInstanciado;
-
     }
 }

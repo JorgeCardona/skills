@@ -11,9 +11,8 @@ public class Base {
     private String logaritmo;
     private String combinatoria;
 
-    private Base() {
-
-    }
+    // constructor privado
+    private Base() {}
 
     Base (BaseBuilder builder){
 

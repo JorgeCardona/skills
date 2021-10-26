@@ -13,6 +13,8 @@ import patrones.diseno.prototype.ClaseClonable;
 import patrones.diseno.singleton.SingletonPatternTestFail;
 import patrones.diseno.singleton.SingletonPatternTestOk;
 
+import java.util.ArrayList;
+
 @SpringBootApplication
 public class DisenoApplication {
 
@@ -40,22 +42,19 @@ public class DisenoApplication {
 	// se crea el objeto dependiendo del identificador que se le envie
 	public static void factoryMessagesTest(){
 
-		MessageFactory mf = new MessageFactory();
+		MessageFactory messageFactory = new MessageFactory();
 
-		InterfaceMessageFactory mfv = mf.create(null);
-		mfv.message();
+		ArrayList<String> values = new ArrayList<>();
+		values.add(null);
+		values.add("uno");
+		values.add("Dos");
+		values.add("TRES");
+		values.add("---");
 
-		InterfaceMessageFactory mf1 = mf.create("uno");
-		mf1.message();
-
-		InterfaceMessageFactory mf2 = mf.create("Dos");
-		mf2.message();
-
-		InterfaceMessageFactory mf3 = mf.create("TRES");
-		mf3.message();
-
-		InterfaceMessageFactory mfn = mf.create("---");
-		mfn.message();
+		for (String val: values) {
+			InterfaceMessageFactory instanceMessageFactory = messageFactory.create(val);
+			instanceMessageFactory.message();
+		}
 	}
 
 	// se crea la fabrica dependiendo del identificador que se le envie
@@ -81,22 +80,28 @@ public class DisenoApplication {
 
 	}
 
+	public static void validateObjects(Object original, Object clone){
+
+		boolean equalObjects = original.equals(clone) ? true : false;
+		System.out.println("OBJETO ORIGINAL " + original + " OBJETO CLONADO " + clone);
+		System.out.println("HASHCODE ORIGINAL " + original.hashCode() + " HASHCODE CLONADO " + clone.hashCode());
+		System.out.println("Instancia de ORIGINAL == Instancia de CLONADO " + equalObjects);
+		System.out.println();
+
+	}
+	// crea una instancia con los valores clonados de otra instancia
 	public static void prototypeTest(){
 
-		ClaseClonable cc = new ClaseClonable();
-		cc.setX(1);
-		cc.setY(2);
+		ClaseClonable original = new ClaseClonable();
+		original.setX(1);
+		original.setY(2);
 
-		System.out.println(cc);
+		ClaseClonable clone = (ClaseClonable) original.clonar();
 
-		ClaseClonable cc2 = (ClaseClonable) cc.clonar();
-		System.out.println(cc2);
+		validateObjects(original, clone);
 
-		boolean equalObjects = cc==cc2 ? true : false;
-
-		System.out.println(cc.hashCode());
-		System.out.println(cc2.hashCode());
-		System.out.println(equalObjects);
+		clone.setX(7);
+		validateObjects(original, clone);
 	}
 
 	public static void builderTest(){
@@ -114,9 +119,9 @@ public class DisenoApplication {
 		SpringApplication.run(DisenoApplication.class, args);
 
 		//singletonTest();
+		//prototypeTest();
 		//factoryMessagesTest();
 		//abstractFactoryTest();
-		//prototypeTest();
 		builderTest();
 	}
 
