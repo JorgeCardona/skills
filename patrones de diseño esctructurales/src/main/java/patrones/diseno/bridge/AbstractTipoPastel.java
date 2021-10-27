@@ -11,13 +11,13 @@ public abstract class AbstractTipoPastel {
         this.pastel = pastel;
     }
 
-    protected void fresa(){
+    protected void ordenarPastelFresa(){
 
         pastel.fresa();
     };
 
 
-    public void melocoton(){
+    protected void ordenarPastelMelocoton(){
 
         pastel.melocoton();
     };

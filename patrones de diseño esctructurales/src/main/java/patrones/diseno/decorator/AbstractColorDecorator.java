@@ -7,6 +7,7 @@ public abstract class AbstractColorDecorator implements InterfaceColors {
     protected InterfaceColors decorateInterface;
 
     public AbstractColorDecorator(InterfaceColors decorateInterface){
+
         this.decorateInterface = decorateInterface;
     }
 

@@ -8,6 +8,6 @@ public class PastelMelocoton extends AbstractTipoPastel {
 
     @Override
     public void ordenarPastel() {
-        melocoton();
+        ordenarPastelMelocoton();
     }
 }

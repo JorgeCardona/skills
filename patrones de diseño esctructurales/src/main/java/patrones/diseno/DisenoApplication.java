@@ -111,26 +111,28 @@ public class DisenoApplication {
 
 	public static void bridgeTest(){
 
+		AbstractTipoPastel tipoPastel;
+		ComplementoChantilly chantilly = new ComplementoChantilly();
+		ComplementoChocolate chocolate = new ComplementoChocolate();
+		ComplementoHelado helado = new ComplementoHelado();
 
-		AbstractTipoPastel fresaChan = new PastelFresa(new ComplementoChantilly());
-		fresaChan.ordenarPastel();
-		fresaChan.melocoton();// modificar a protected
+		ArrayList<Object> listaComplemento = new ArrayList<>();
+		listaComplemento.add(chantilly);
+		listaComplemento.add(chocolate);
+		listaComplemento.add(helado);
 
-		AbstractTipoPastel fresaCho = new PastelFresa(new ComplementoChocolate());
-		fresaCho.ordenarPastel();
 
-		AbstractTipoPastel fresaHel = new PastelFresa(new ComplementoHelado());
-		fresaHel.ordenarPastel();
+		for (Object complementoPastelFresa : listaComplemento) {
 
-		AbstractTipoPastel meloChan = new PastelMelocoton(new ComplementoChantilly());
-		meloChan.ordenarPastel();
+			tipoPastel = new PastelFresa((AbstractPastel) complementoPastelFresa);
+			tipoPastel.ordenarPastel();
+		}
 
-		AbstractTipoPastel meloCho = new PastelMelocoton(new ComplementoChocolate());
-		meloCho.ordenarPastel();
+		for (Object complementoPastelMelocoton: listaComplemento) {
 
-		AbstractTipoPastel meloHel = new PastelMelocoton(new ComplementoHelado());
-		meloHel.ordenarPastel();
-
+			tipoPastel = new PastelMelocoton((AbstractPastel) complementoPastelMelocoton);
+			tipoPastel.ordenarPastel();
+		}
 	}
 
 	public static void main(String[] args) {

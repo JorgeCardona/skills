@@ -9,6 +9,6 @@ public class PastelFresa extends AbstractTipoPastel {
     @Override
     public void ordenarPastel() {
 
-        fresa();
+        ordenarPastelFresa();
     }
 }
