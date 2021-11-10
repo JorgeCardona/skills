@@ -1,0 +1,16 @@
+server:
+  port : 8080
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    database_connection = {engine}://{hostname}:{port}/{database}
+    url:
+      jdbc: ${spring.datasource.database_connection:}
+      jdbc: mysql://zemoga-test-db.crhpedy9xxto.us-east-1.rds.amazonaws.com:3306/zemoga_test_db
+    username: zemoga_test_db
+    password: Zem0ga.101
+  jpa:
+    show-sql: true
+
+    {engine}{hostname}{port}/{database}
