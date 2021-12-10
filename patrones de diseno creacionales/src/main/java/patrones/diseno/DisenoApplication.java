@@ -120,7 +120,7 @@ public class DisenoApplication {
 
 		//singletonTest();
 		//prototypeTest();
-		//factoryMessagesTest();
+		factoryMessagesTest();
 		//abstractFactoryTest();
 		builderTest();
 	}
