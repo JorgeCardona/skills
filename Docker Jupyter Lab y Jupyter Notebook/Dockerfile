@@ -26,12 +26,12 @@ CMD jupyter ${TYPE} --port=8888 --no-browser --ip=0.0.0.0 --allow-root
 
 # cuando se quiera crear un contenedor y se mantenga incluso despues de cerrar la sesion
 #docker run --name lab -i -t -p 8888:8888 jorgecardona/jupyter
-#docker run --name lab --rm -i -t -p 8888:8888 -e TYPE=notebook jorgecardona/jupyter
+#docker run --name notebook -i -t -p 8888:8888 -e TYPE=notebook jorgecardona/jupyter
 
 # cuando se quiera detener la ejecucion del contenedor
 #docker stop lab
 #docker stop notebook
 
-# cuando se quiera continuar la ejecucion en un contenedor persistido
+# cuando se quiera continuar o reiniciar la ejecucion en un contenedor persistido
 #docker start -i lab
 #docker start -i notebook
