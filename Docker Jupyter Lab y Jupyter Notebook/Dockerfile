@@ -10,7 +10,8 @@ FROM python:latest
 
 #actualiza el pip e instala los paquetes de las versiones de los notebooks
 RUN apt-get update
-RUN apt-get install default-jdk -y # para dar soporte a librerias que necesiten java como SPARK
+# para dar soporte a librerias que necesiten java como SPARK
+RUN apt-get install default-jdk -y 
 
 # configura el directorio de inicializacion de java
 #ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64/bin/java
