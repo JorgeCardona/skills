@@ -21,11 +21,17 @@ subjects:
   namespace: kubernetes-dashboard
   
   
-# DESPLEGAR EL DASH BOARD 
-# kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.6.0/aio/deploy/recommended.yaml
+# DESPLEGAR EL DASHBOARD 
+# kubectl apply -f https://raw.githubusercontent.com/JorgeCardona/skills/master/Kubernetes/dashboard/dashboard-recommended.yaml
 
 # CREAR LOS USUARIOS PARA EL DASHBOARD
-# kubectl apply -f
+# kubectl apply -f https://raw.githubusercontent.com/JorgeCardona/skills/master/Kubernetes/dashboard/dashboard-adminuser.yaml
+
+# HABILITAR EL ACCESO AL DASHBOARD
+# kubectl proxy
+
+# ACCEDER AL DASHBOARD
+# http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy
 
 # GENERAR EL TOKEN PARA ACCEDER AL DASHBOARD
 # kubectl -n kubernetes-dashboard create token admin-user
