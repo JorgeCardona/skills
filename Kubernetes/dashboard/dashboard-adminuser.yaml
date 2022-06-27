@@ -30,8 +30,10 @@ subjects:
 # HABILITAR EL ACCESO AL DASHBOARD
 # kubectl proxy
 
+# GENERAR EL TOKEN PARA ACCEDER AL DASHBOARD
+# kubectl -n kubernetes-dashboard create token admin-user
+
 # ACCEDER AL DASHBOARD
 # http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy
 
-# GENERAR EL TOKEN PARA ACCEDER AL DASHBOARD
-# kubectl -n kubernetes-dashboard create token admin-user
+
