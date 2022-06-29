@@ -35,5 +35,5 @@ subjects:
 
 # ACCEDER AL DASHBOARD
 # http://localhost:1978/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy
-#  http://127.0.0.1:1978/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/
+# http://localhost:1978/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy
 
