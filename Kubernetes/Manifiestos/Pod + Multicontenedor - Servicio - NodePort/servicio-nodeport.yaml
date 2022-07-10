@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    run: multicontainer-pod-testing-nodeport-service
+  name: multicontainer-pod-svc-nodeport
+  namespace: default
+spec:
+  sessionAffinity: None
+  type: NodePort
+  selector:
+    run: multicontainer-pod-testing-nodeport-pod
+  ports:
+
+  - name: port-java # se puede poner el nombre que se quiera, lo importante es el puerto que TIENE que ser el del contenedor
+    protocol: TCP
+    port: 9999 # puerto original donde se expone el contenedor de la imagen y puerto donde se va a exponer la aplicacion
+
+  - name: port-python
+    protocol: TCP
+    port: 5000 # puerto original donde se expone el contenedor de la imagen y puerto donde se va a exponer la aplicacion
+
+
+# kubectl expose pod multicontainer-pod-nodeport --name=multicontainer-pod-svc-nodeport --type=NodePort
+# kubectl get services
+# kubectl describe svc multicontainer-pod-svc-nodeport
