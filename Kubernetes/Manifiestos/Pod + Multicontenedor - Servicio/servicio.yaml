@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    run: multicontainer-pod-testing
+  name: multicontainer-pod-svc
+  namespace: default
+spec:
+  ports:
+  - name: port-python
+    port: 5000
+    protocol: TCP
+    targetPort: 5000
+  - name: port-java
+    port: 9999
+    protocol: TCP
+    targetPort: 9999
+  selector:
+    run: multicontainer-pod-testing
+  sessionAffinity: None
+  type: NodePort
+
+# kubectl expose pod multicontainer-pod --name=multicontainer-pod-svc --type=NodePort
+# kubectl get services
+# kubectl describe svc multicontainer-pod-svc
