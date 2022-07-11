@@ -11,7 +11,6 @@ spec:
   selector:
     run: multicontainer-pod-testing-nodeport-pod
   ports:
-
   - name: port-java # se puede poner el nombre que se quiera, lo importante es el puerto que TIENE que ser el del contenedor
     protocol: TCP
     port: 9999 # puerto original donde se expone el contenedor de la imagen y puerto donde se va a exponer la aplicacion
