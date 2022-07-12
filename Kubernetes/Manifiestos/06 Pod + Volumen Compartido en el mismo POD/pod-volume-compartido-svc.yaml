@@ -10,7 +10,7 @@ spec:
     image: jorgecardona/test-kubernetes-ip-python-3.10.5:v1 # imagen con la que se va a crear el contenedor
     
     volumeMounts:
-    - name: almacenamiento-compartido
+    - name: almacenamiento-compartido # solo crea DIRECTORIOS no ARCHIVOS
       mountPath: /data/files
       
       
@@ -18,7 +18,7 @@ spec:
     image: jorgecardona/test-kubernetes-ip-java-17:v1 # imagen con la que se va a crear el contenedor
     
     volumeMounts:
-    - name: almacenamiento-compartido
+    - name: almacenamiento-compartido # solo crea DIRECTORIOS no ARCHIVOS
       mountPath: /data/files
       
   volumes:
