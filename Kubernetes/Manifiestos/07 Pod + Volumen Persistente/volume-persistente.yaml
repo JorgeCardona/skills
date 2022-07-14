@@ -1,0 +1,44 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: persistence-volume
+spec:
+  #volumeName: volumen-de-nodo
+  volumeMode: Filesystem
+  #persistentVolumeReclaimPolicy: Delete
+  storageClassName: hostpath # https://kubernetes.io/docs/concepts/storage/persistent-volumes/#types-of-persistent-volumes
+  accessModes:
+    - ReadWriteMany # para multiples nodos, ReadWriteOnce para un nodo,ReadOnlyMany lectura para muchos nodos
+  resources:
+    requests:
+      storage: 100Mi
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: persistence-volume-recycle
+spec:
+  storageClassName: hostpath # https://kubernetes.io/es/docs/concepts/storage/volumes/#hostpath
+  persistentVolumeReclaimPolicy: Recycle
+  capacity:
+    storage: 100Mi
+  accessModes:
+    - ReadWriteMany
+  nfs: # https://kubernetes.io/es/docs/concepts/storage/volumes/#nfs
+    path: /var/shared
+    server: 10.0.0.4
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: persistence-volume-retain
+spec:
+  storageClassName: local-storage # https://kubernetes.io/es/docs/concepts/storage/volumes/#local
+  persistentVolumeReclaimPolicy: Retain
+  capacity:
+    storage: 100Mi
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    path: /var/shared
+    server: 10.0.0.5
