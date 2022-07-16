@@ -79,11 +79,11 @@ spec:
     targetPort: 5000 # puerto original donde se expone el contenedor de la imagen 
     port: 5555 # puerto en el que se quiere exponer la aplicacion, solo porque esta declarada la propiedad targetPort
 ---
-# kubectl exec multicontainer-pod-v2 -c=java -it -- sh
+# kubectl exec mc-pod-v2 -c=java -it -- sh
 # Instalar bash y curl
 # apk update
 # apk upgrade
 # apk add bash
 # apk add curl
-# curl multicontainer-pod-v1-svc-loadbalancer:3333
-# curl multicontainer-pod-v1-svc-loadbalancer:7777/all
+# curl mc-pod-v1-svc-clusterip:3333
+# curl mc-pod-v1-svc-clusterip:7777/all
