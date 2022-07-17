@@ -1,3 +1,6 @@
+# https://kubernetes.github.io/ingress-nginx/deploy/#quick-start
+# kubectl apply -f https://raw.githubusercontent.com/JorgeCardona/skills/master/Kubernetes/Ingress%20Controller%20Nginx/kubernetes-ingress-nginx-v1.3.0.yaml
+---
 apiVersion: v1
 kind: Pod
 metadata:
