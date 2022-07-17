@@ -87,3 +87,5 @@ spec:
 # apk add curl
 # curl mc-pod-v1-svc-clusterip:3333
 # curl mc-pod-v1-svc-clusterip:7777/all
+# http://mc-pod-v1-svc-clusterip:3333/all
+# http://mc-pod-v1-svc-clusterip:7777/env
