@@ -1,0 +1,115 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: limits-pod-v1 # base del selector
+  name: mc-limits-v1 # nombre del HOSTNAME del POD
+spec:
+  containers:
+  - name: python # nombre que va a tener el contenedor dentro del POD
+    image: jorgecardona/test-kubernetes-ip-python-3.10.5:v1 # imagen con la que se va a crear el contenedor
+    resources:
+      limits:
+        memory: 1024Mi
+        cpu: 2000m
+      requests:
+        memory: 512Mi
+        cpu: 1000m          
+      
+  - name: java # nombre que va a tener el contenedor dentro del POD
+    image: jorgecardona/test-kubernetes-ip-java-17:v1 # imagen con la que se va a crear el contenedor
+    resources:
+      limits:
+        memory: 1024Mi
+        cpu: 2000m
+      requests:
+        memory: 512Mi
+        cpu: 1000m         
+   
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: limits-pod-v2 # base del selector
+  name: mc-limits-v2 # nombre del HOSTNAME del POD
+spec:
+  containers:
+  - name: python # nombre que va a tener el contenedor dentro del POD
+    image: jorgecardona/test-kubernetes-ip-python-3.10.5:v1 # imagen con la que se va a crear el contenedor
+    resources:
+      limits:
+        memory: 1024Mi
+        cpu: 2000m
+      requests:
+        memory: 512Mi
+        cpu: 1000m      
+      
+  - name: java # nombre que va a tener el contenedor dentro del POD
+    image: jorgecardona/test-kubernetes-ip-java-17:v1 # imagen con la que se va a crear el contenedor
+    resources:
+      limits:
+        memory: 1024Mi
+        cpu: 2000m
+      requests:
+        memory: 512Mi
+        cpu: 1000m          
+   
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    run: limits-pod-testing-lb-service-v1
+  name: limits-pod-svc-lb-v1
+  namespace: default
+spec:
+  sessionAffinity: None
+  type: LoadBalancer
+  selector:
+    run: limits-pod-v1
+  ports:
+
+  - name: port-java # se puede poner el nombre que se quiera, lo importante es el puerto que TIENE que ser el del contenedor
+    protocol: TCP
+    targetPort: 9999 # puerto original donde se expone el contenedor de la imagen 
+    port: 3333 # puerto en el que se quiere exponer la aplicacion, solo porque esta declarada la propiedad targetPort
+    
+  - name: port-python
+    protocol: TCP
+    targetPort: 5000 # puerto original donde se expone el contenedor de la imagen 
+    port: 7777 # puerto en el que se quiere exponer la aplicacion, solo porque esta declarada la propiedad targetPort
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    run: limits-pod-testing-lb-service-v2
+  name: limits-pod-svc-lb-v2
+  namespace: default
+spec:
+  sessionAffinity: None
+  type: LoadBalancer
+  selector:
+    run: limits-pod-v2
+  ports:
+
+  - name: port-java # se puede poner el nombre que se quiera, lo importante es el puerto que TIENE que ser el del contenedor
+    protocol: TCP
+    targetPort: 9999 # puerto original donde se expone el contenedor de la imagen 
+    port: 4444 # puerto en el que se quiere exponer la aplicacion, solo porque esta declarada la propiedad targetPort
+    
+  - name: port-python
+    protocol: TCP
+    targetPort: 5000 # puerto original donde se expone el contenedor de la imagen 
+    port: 5555 # puerto en el que se quiere exponer la aplicacion, solo porque esta declarada la propiedad targetPort
+---
+# kubectl describe node
+# http://localhost:3333/java/
+# http://localhost:4444/java/ 
