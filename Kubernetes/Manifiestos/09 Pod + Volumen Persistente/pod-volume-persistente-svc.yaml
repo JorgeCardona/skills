@@ -82,8 +82,8 @@ spec:
     port: 7777 # puerto en el que se quiere exponer la aplicacion, solo porque esta declarada la propiedad targetPort
 ---
 
-# http://localhost:3333
-# http://localhost:7777
+# http://localhost:3333/java
+# http://localhost:7777/python
 
 # kubectl expose pod multicontainer-pod-loadbalancer --name=multicontainer-pod-svc-loadbalancer --type=LoadBalancer
 # kubectl get services
