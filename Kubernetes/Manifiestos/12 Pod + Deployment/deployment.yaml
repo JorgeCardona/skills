@@ -1,0 +1,49 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mc-deploy-using-nodeport  # nombre del deployment
+  labels:
+    app: mc-deploy-nodeport
+spec:
+  replicas: 3 # cantidad de contenedores a crear de la misma imagen
+  selector:
+    matchLabels:
+      app: mc-pod-deploy-nodeport
+  template:
+    metadata:
+      labels:
+        app: mc-pod-deploy-nodeport # tiene que ser el mismo nombre que el selector de selector-matchLabels-app
+    spec:
+      containers:
+      - name: java
+        image: jorgecardona/test-kubernetes-ip-java-17:v1 # nombre de la imagen que se va a desplegar
+        ports:
+        - containerPort: 1111
+      - name: python
+        image: jorgecardona/test-kubernetes-ip-python-3.10.5:v1 # imagen con la que se va a crear el contenedor
+        ports:
+        - containerPort: 2222
+        #imagePullPolicy: Never # para que busque la imagen en local
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service # tipo de objeto de kubernetes
+metadata:
+  name: mc-deploy-using-nodeport-svc # nombre del servicio
+  #namespace: testing # namespace donde se va a desplegar el servicio
+spec: # define las especificaciones y configuraciones del servicio
+  selector: # 
+    app: mc-pod-deploy-nodeport # tiene que ser el mismo nombre del selector del despliegue
+  type: NodePort # tipo de servicio
+  ports: # define las configuraciones de acceso con que se expone el servicio
+    - name: java-port
+      protocol: TCP # tipo de protocolo con qu se expone la aplicacion      
+      targetPort: 9999 # es el puerto original donde se expone la aplicacion de docker
+      port: 4444 # es el puerto donde se va a exponer para consumir
+      
+    - name: python-port
+      protocol: TCP # tipo de protocolo con qu se expone la aplicacion      
+      targetPort: 5000 # es el puerto original donde se expone la aplicacion de docker
+      port: 5555 # es el puerto donde se va a exponer para consumir
+

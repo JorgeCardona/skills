@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: daemonset-mc
+
+spec:
+  selector:
+    matchLabels:
+      name: daemonset-mc
+  template:
+    metadata:
+      labels:
+        name: daemonset-mc
+    spec:
+      containers:
+      - name: python # nombre que va a tener el contenedor dentro del POD
+        image: jorgecardona/test-kubernetes-ip-python-3.10.5:v1 # imagen con la que se va a crear el contenedor
+        
+      - name: java # nombre que va a tener el contenedor dentro del POD
+        image: jorgecardona/test-kubernetes-ip-java-17:v1 # imagen con la que se va a crear el contenedor

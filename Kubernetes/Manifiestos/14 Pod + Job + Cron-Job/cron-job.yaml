@@ -1,0 +1,18 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: pod-job-secuencial
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: job-python
+            image: jorgecardona/test-kubernetes-ip-python-3.10.5:v1 # imagen con la que se va a crear el contenedor
+            args:
+            - /bin/sh
+            - -c
+            - date; echo Job Ejecutado en el contenedor de Python
+          restartPolicy: OnFailure
