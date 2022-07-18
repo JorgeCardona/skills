@@ -1,0 +1,71 @@
+# https://kubernetes.github.io/ingress-nginx/deploy/#quick-start
+# kubectl apply -f https://raw.githubusercontent.com/JorgeCardona/skills/master/Kubernetes/Ingress%20Controller%20Nginx/kubernetes-ingress-nginx-v1.3.0.yaml
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: mc-np-ingress # base del selector
+  name: mc-pod-np-ingress # nombre del HOSTNAME del POD
+spec:
+  containers:
+  - name: python # nombre que va a tener el contenedor dentro del POD
+    image: jorgecardona/test-kubernetes-ip-python-3.10.5:v1 # imagen con la que se va a crear el contenedor
+    
+  - name: java # nombre que va a tener el contenedor dentro del POD
+    image: jorgecardona/test-kubernetes-ip-java-17:v1 # imagen con la que se va a crear el contenedor
+    
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    run: mc-pod-t-np-svc-ingress
+  name: mc-pod-svc-nodeport-ingress
+  namespace: default
+spec:
+  sessionAffinity: None
+  type: NodePort
+  selector:
+    run: mc-np-ingress
+  ports:
+  - name: port-java # se puede poner el nombre que se quiera, lo importante es el puerto que TIENE que ser el del contenedor
+    protocol: TCP
+    port: 9999 # puerto original donde se expone el contenedor de la imagen y puerto donde se va a exponer la aplicacion
+
+  - name: port-python
+    protocol: TCP
+    port: 5000 # puerto original donde se expone el contenedor de la imagen y puerto donde se va a exponer la aplicacion
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-multicontainer-java-python  
+  annotations:   
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    #nginx.ingress.kubernetes.io/rewrite-target: /$1
+spec:
+  rules:
+    - http:   
+        paths:  
+          - path: /python # context path de la aplicacion
+            pathType: Prefix   
+            backend:   
+              service:   
+                name: mc-pod-svc-nodeport-ingress   
+                port:  
+                  number: 5000
+          - path: /java # context path de la aplicacion
+            pathType: Prefix   
+            backend:   
+              service:   
+                name: mc-pod-svc-nodeport-ingress
+                port:  
+                  number: 9999
+---
+# http://localhost/python/docs
+# http://localhost/java
