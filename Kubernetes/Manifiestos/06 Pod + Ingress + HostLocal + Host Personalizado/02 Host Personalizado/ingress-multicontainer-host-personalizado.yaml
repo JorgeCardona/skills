@@ -2,7 +2,8 @@
 # kubectl apply -f https://raw.githubusercontent.com/JorgeCardona/skills/master/Kubernetes/Ingress%20Controller%20Nginx/kubernetes-ingress-nginx-v1.3.0.yaml
 # paso 4 -> https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/
 # en el archivo host del directorio C:\Windows\System32\drivers\etc\ 
-# adicionar la linea 127.0.0.1 jorge-cardona.kubernetes  
+# adicionar la linea de los host, despues de que kubectl get ingress muestre la ADDRESS
+# en este caso localhost entonces se pone -> 127.0.0.1 jorge-cardona.kubernetes  y 127.0.0.1 jorge-cardona.ingress
 ---
 apiVersion: v1
 kind: Pod
@@ -70,6 +71,26 @@ spec:
                 name: mc-pod-svc-nodeport-ingress
                 port:  
                   number: 9999
+                
+    - host: jorge-cardona.ingress
+      http:   
+        paths:  
+          - path: /python # context path de la aplicacion
+            pathType: Prefix   
+            backend:   
+              service:   
+                name: mc-pod-svc-nodeport-ingress   
+                port:  
+                  number: 5000
+          - path: /java # context path de la aplicacion
+            pathType: Prefix   
+            backend:   
+              service:   
+                name: mc-pod-svc-nodeport-ingress
+                port:  
+                  number: 9999
 ---
 # http://jorge-cardona.kubernetes/python/docs
 # http://jorge-cardona.kubernetes/java
+# http://jorge-cardona.ingress/python/all
+# http://jorge-cardona.ingress/java/env
