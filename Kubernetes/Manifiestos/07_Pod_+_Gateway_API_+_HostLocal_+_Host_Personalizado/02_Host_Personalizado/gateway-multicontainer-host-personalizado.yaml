@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   labels:
-    run: multicontainer-pod-testing-loadbalancer-pod # base del selector
-  name: multicontainer-pod-loadbalancer # nombre del HOSTNAME del POD
+    run: mc-gateway-pod # base del selector
+  name: mc-pod-gw-lb # nombre del HOSTNAME del POD
 spec:
   containers:
   - name: python # nombre que va a tener el contenedor dentro del POD
@@ -20,14 +20,14 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    run: multicontainer-pod-testing-loadbalancer-service
-  name: multicontainer-pod-svc-loadbalancer
+    run: mc-pod-gateway-svc-testing
+  name: mc-pod-gateway-svc
   namespace: default
 spec:
   sessionAffinity: None
   type: LoadBalancer
   selector:
-    run: multicontainer-pod-testing-loadbalancer-pod
+    run: mc-gateway-pod
   ports:
 
   - name: port-java # se puede poner el nombre que se quiera, lo importante es el puerto que TIENE que ser el del contenedor
@@ -38,12 +38,19 @@ spec:
   - name: port-python
     protocol: TCP
     targetPort: 5000 # puerto original donde se expone el contenedor de la imagen 
-    port: 7777 # puerto en el que se quiere exponer la aplicacion, solo porque esta declarada la propiedad targetPort
+    port: 80 # puerto en el que se quiere exponer la aplicacion, solo porque esta declarada la propiedad targetPort
+---
+apiVersion: gateway.networking.k8s.io/v1beta1
+kind: HTTPRoute
+metadata:
+  name: gateway-http-route
+spec:
+  hostnames:
+  - jorge-cardona.gateway
+  rules:
+  - backendRefs:
+    - name: mc-pod-gateway-svc
+      port: 1111 # puede ser cualquier valor
 
-# http://localhost:3333/java
-# http://localhost:7777/python
-
-# kubectl expose pod multicontainer-pod-loadbalancer --name=multicontainer-pod-svc-loadbalancer --type=LoadBalancer
-# kubectl get services
-# kubectl describe svc multicontainer-pod-svc-loadbalancer
-# kubectl describe pod multicontainer-pod-loadbalancer
+# http://jorge-cardona.gateway/python -> ya que el contenedor de python esta expuesto en el puerto 80 no necesita especificar el puerto en la barra de direcciones
+# http://jorge-cardona.gateway:3333/java

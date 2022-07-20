@@ -1,0 +1,76 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: mc-gateway-pod # base del selector
+  name: mc-pod-gw-lb # nombre del HOSTNAME del POD
+spec:
+  containers:
+  - name: python # nombre que va a tener el contenedor dentro del POD
+    image: jorgecardona/test-kubernetes-ip-python-3.10.5:v1 # imagen con la que se va a crear el contenedor
+    
+  - name: java # nombre que va a tener el contenedor dentro del POD
+    image: jorgecardona/test-kubernetes-ip-java-17:v1 # imagen con la que se va a crear el contenedor
+
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    run: mc-pod-gateway-svc-testing
+  name: mc-pod-gateway-svc
+  namespace: default
+spec:
+  sessionAffinity: None
+  type: NodePort
+  selector:
+    run: mc-gateway-pod
+  ports:
+  - name: port-java # se puede poner el nombre que se quiera, lo importante es el puerto que TIENE que ser el del contenedor
+    protocol: TCP
+    port: 9999 # puerto original donde se expone el contenedor de la imagen y puerto donde se va a exponer la aplicacion
+
+  - name: port-python
+    protocol: TCP
+    port: 5000 # puerto original donde se expone el contenedor de la imagen y puerto donde se va a exponer la aplicacion
+---
+apiVersion: gateway.networking.k8s.io/v1beta1
+kind: Gateway
+metadata:
+  name: mc-gateway
+spec:
+  gatewayClassName: cluster-gateway
+  listeners:
+  - name: http
+    protocol: HTTP
+    port: 80
+---
+apiVersion: gateway.networking.k8s.io/v1beta1
+kind: HTTPRoute
+metadata:
+  name: mc-gateway-http-route
+spec:
+  parentRefs:
+  - name: mc-gateway
+  hostnames:
+  - jorge-cardona.gateway
+  rules:
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /python
+    backendRefs:
+    - name: mc-gateway-pod
+      port: 5000
+    - path:
+        type: PathPrefix
+        value: /java
+    backendRefs:
+    - name: mc-gateway-pod
+      port: 9999
+---
+# http://jorge-cardona.gateway:7777/python
+# http://jorge-cardona.gateway:3333/java

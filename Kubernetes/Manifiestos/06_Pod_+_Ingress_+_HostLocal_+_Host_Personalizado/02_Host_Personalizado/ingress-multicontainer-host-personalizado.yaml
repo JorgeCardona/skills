@@ -72,7 +72,7 @@ spec:
                 port:  
                   number: 9999
                   
-    - host: jorge-cardona.ingress
+    - host: jorge-cardona.ingress.tereres
       http:   
         paths:  
           - path: /python # context path de la aplicacion
