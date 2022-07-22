@@ -8,8 +8,27 @@ metadata:
   name: pod-sencillo
 spec:
   containers:
-  - image: jorgecardona/test-kubernetes-ip-python-3.10.5:v1
-    name: python
-    ports:
-    - containerPort: 5000
-      protocol: TCP
+    - image: 'jorgecardona/test-kubernetes-ip-python-3.10.5:v1'
+      name: pod-testing
+      ports:
+        - name: container-port
+          containerPort: 5000
+          hostPort: 5000
+          
+      livenessProbe:
+        httpGet:
+          path: /python
+          port: container-port # reemplazado por el nombre del puerto definido en puertos
+        initialDelaySeconds: 5
+        timeoutSeconds: 2
+        periodSeconds: 3
+        failureThreshold: 4
+        
+      readinessProbe:
+        httpGet:
+          path: /python
+          port: 5000
+        initialDelaySeconds: 5
+        timeoutSeconds: 2
+        periodSeconds: 3
+        failureThreshold: 4
