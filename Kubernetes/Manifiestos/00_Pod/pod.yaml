@@ -8,15 +8,15 @@ metadata:
   name: pod-sencillo
 spec:
   containers:
-    - image: 'jorgecardona/test-kubernetes-ip-python-3.10.5:v1'
+    - image: jorgecardona/test-kubernetes-ip-python-3.10.5:v1
       name: pod-testing
       ports:
         - name: container-port
           containerPort: 5000
           hostPort: 5000
           
-      livenessProbe:
-        httpGet:
+      livenessProbe: # el pod esta vivo, entonces lo que se busca es que no se destruya este pod
+        httpGet: # si falla la prueba se reinicia el contenedor. 
           path: /python
           port: container-port # reemplazado por el nombre del puerto definido en puertos
         initialDelaySeconds: 5
@@ -24,11 +24,21 @@ spec:
         periodSeconds: 3
         failureThreshold: 4
         
-      readinessProbe:
-        httpGet:
-          path: /python
+      startupProbe: # el pod esta disponible para trafico despues de iniciar
+        httpGet: # apenas el pod inicia envia trafico hacia el pod.
+          path: /python/env
+          port: container-port
+        initialDelaySeconds: 5
+        timeoutSeconds: 2
+        periodSeconds: 3
+        failureThreshold: 4
+
+      readinessProbe: # pod listo para recibir trafico
+        httpGet: # si falla la prueba espera a que se solucione al problema, eliminando el trafico hacia el pod.
+          path: /python/docs
           port: 5000
         initialDelaySeconds: 5
         timeoutSeconds: 2
         periodSeconds: 3
         failureThreshold: 4
+
