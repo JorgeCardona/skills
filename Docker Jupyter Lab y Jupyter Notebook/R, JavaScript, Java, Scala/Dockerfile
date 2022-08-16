@@ -35,6 +35,9 @@ RUN echo 'IRkernel::installspec()' > /tmp/temp.R && Rscript /tmp/temp.R
 # Instala Scala. def suma(a: Int) = a + 3
 RUN apt-get install scala -y 
 
+# Instala Kotlin kernel
+RUN pip install kotlin-jupyter-kernel
+
 # crea un directorio para guardar archivos
 RUN mkdir src
 # define el directorio donde se van a guardar y a leer los notebooks por defecto
