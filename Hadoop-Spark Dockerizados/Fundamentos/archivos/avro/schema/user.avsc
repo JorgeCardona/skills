@@ -1,0 +1,12 @@
+{
+"namespace": "ejemplo.serializacion.avro",
+ "type": "record",
+ "name": "User",
+ "fields": [
+     {"name": "nombre", "type": "string"},
+     {"name": "numero",  "type": ["int", "null"]},
+     {"name": "color", "type": ["string", "null"]},
+     {"name": "lenguaje", "type": ["string", "null"]}
+ ]
+ 
+}
