@@ -38,6 +38,13 @@ RUN apt-get install scala -y
 # Instala Kotlin kernel
 RUN pip install kotlin-jupyter-kernel
 
+# Instala el Kernel de Java
+RUN apt update
+RUN apt install git
+RUN git clone https://github.com/SpencerPark/IJava.git
+RUN cd IJava/ && ./gradlew installKernel && cd .. && rm -rf IJava/
+RUN rm -rf ~/.gradle
+
 # crea un directorio para guardar archivos
 RUN mkdir src
 # define el directorio donde se van a guardar y a leer los notebooks por defecto
