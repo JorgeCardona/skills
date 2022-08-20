@@ -1,4 +1,4 @@
-FROM jorgecardona/hadoop-cluster-datanode:v1
+FROM jorgecardona/hadoop-2.7.7-java-8-cluster-datanode:v1
 MAINTAINER Jorge Cardona
 
 WORKDIR /root
@@ -11,7 +11,7 @@ ENV SPARK_DISTRIBUTION=spark-2.4.8
 ENV HADOOP_DISTRIBUTION=hadoop2.7
 
 # define el repositorio donde se va a descargar Hadoop
-ENV SPARK_WEB=http://apache.rediris.es/spark/${SPARK_DISTRIBUTION}
+ENV SPARK_WEB=https://archive.apache.org/dist/spark/${SPARK_DISTRIBUTION}
 
 # defina la version de Hadoop a descargar
 ENV SPARK_VERSION=${SPARK_DISTRIBUTION}-bin-${HADOOP_DISTRIBUTION}
@@ -49,12 +49,19 @@ CMD ["/etc/bootstrap.sh", "-d"]
 
 EXPOSE 18080
 
-# docker build -f docker/master/Dockerfile -t jorgecardona/hadoop-cluster-namenode:v1 docker/master
+# docker build -f docker/master/Dockerfile -t jorgecardona/spark-2.4.8-hadoop-2.7-java-8-cluster-namenode:v1 docker/master
 
 # docker network create --driver=bridge hadoop-network 
-# docker run --rm -itd  --net=hadoop-network  --name hadoop-slave1 --hostname hadoop-slave1 jorgecardona/hadoop-cluster-datanode:v1
-# docker run --rm -itd  --net=hadoop-network  --name hadoop-slave2 --hostname hadoop-slave2 jorgecardona/hadoop-cluster-datanode:v1
-# docker run --rm -itd  --net=hadoop-network  --name hadoop-slave3 --hostname hadoop-slave3 jorgecardona/hadoop-cluster-datanode:v1
-# docker run --rm -itd  --net=hadoop-network  --name hadoop-slave4 --hostname hadoop-slave4 jorgecardona/hadoop-cluster-datanode:v1
-# docker run --rm -itd  --net=hadoop-network  --name hadoop-slave5 --hostname hadoop-slave5 jorgecardona/hadoop-cluster-datanode:v1
-# docker run --rm -itd --net=hadoop-network -p 50070:50070  -p 8088:8088  -p 18080:18080  --name hadoop-master --hostname hadoop-master -v $PWD/data:/data jorgecardona/hadoop-cluster-namenode:v1
+# docker run --rm -itd  --net=hadoop-network  --name hadoop-slave1 --hostname hadoop-slave1 jorgecardona/hadoop-2.7.7-java-8-cluster-datanode:v1
+# docker run --rm -itd  --net=hadoop-network  --name hadoop-slave2 --hostname hadoop-slave2 jorgecardona/hadoop-2.7.7-java-8-cluster-datanode:v1
+# docker run --rm -itd  --net=hadoop-network  --name hadoop-slave3 --hostname hadoop-slave3 jorgecardona/hadoop-2.7.7-java-8-cluster-datanode:v1
+# docker run --rm -itd  --net=hadoop-network  --name hadoop-slave4 --hostname hadoop-slave4 jorgecardona/hadoop-2.7.7-java-8-cluster-datanode:v1
+# docker run --rm -itd  --net=hadoop-network  --name hadoop-slave5 --hostname hadoop-slave5 jorgecardona/hadoop-2.7.7-java-8-cluster-datanode:v1
+# docker run --rm -itd --net=hadoop-network -p 50070:50070  -p 8088:8088  -p 18080:18080  --name hadoop-master --hostname hadoop-master -v $PWD/data:/data jorgecardona/hadoop-cluster-java-8-spark-2.4.8-hadoop-2.7-namenode:v1
+
+# hadoop 
+# http://localhost:50070
+# http://localhost:8088
+
+# spark 
+# http://localhost:18080
