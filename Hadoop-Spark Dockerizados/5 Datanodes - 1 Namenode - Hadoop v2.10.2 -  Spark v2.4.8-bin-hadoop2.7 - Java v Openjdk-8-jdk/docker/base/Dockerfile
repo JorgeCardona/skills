@@ -87,12 +87,12 @@ EXPOSE 49707 2122
 # docker build -f docker/base/Dockerfile -t jorgecardona/hadoop-2.7.7-java-8-cluster-datanode:v1 docker/base
 
 # docker network create --driver=bridge hadoop-network 
-# docker run --rm -itd  --net=hadoop-network  --name hadoop-slave1 --hostname hadoop-slave1 jorgecardona/hadoop-2.7.7-java-8-cluster-datanode:v1
-# docker run --rm -itd  --net=hadoop-network  --name hadoop-slave2 --hostname hadoop-slave2 jorgecardona/hadoop-2.7.7-java-8-cluster-datanode:v1
-# docker run --rm -itd  --net=hadoop-network  --name hadoop-slave3 --hostname hadoop-slave3 jorgecardona/hadoop-2.7.7-java-8-cluster-datanode:v1
-# docker run --rm -itd  --net=hadoop-network  --name hadoop-slave4 --hostname hadoop-slave4 jorgecardona/hadoop-2.7.7-java-8-cluster-datanode:v1
-# docker run --rm -itd  --net=hadoop-network  --name hadoop-slave5 --hostname hadoop-slave5 jorgecardona/hadoop-2.7.7-java-8-cluster-datanode:v1
-# docker run --rm -itd --net=hadoop-network -p 50070:50070  -p 8088:8088  -p 18080:18080  --name hadoop-master --hostname hadoop-master -v $PWD/data:/data jorgecardona/spark-2.4.8-hadoop-2.7-java-8-cluster-namenode:v1
+# docker run --rm -itd --net=hadoop-network --name hadoop-slave1 --hostname hadoop-slave1 jorgecardona/hadoop-2.7.7-java-8-cluster-datanode:v1
+# docker run --rm -itd --net=hadoop-network --name hadoop-slave2 --hostname hadoop-slave2 jorgecardona/hadoop-2.7.7-java-8-cluster-datanode:v1
+# docker run --rm -itd --net=hadoop-network --name hadoop-slave3 --hostname hadoop-slave3 jorgecardona/hadoop-2.7.7-java-8-cluster-datanode:v1
+# docker run --rm -itd --net=hadoop-network --name hadoop-slave4 --hostname hadoop-slave4 jorgecardona/hadoop-2.7.7-java-8-cluster-datanode:v1
+# docker run --rm -itd --net=hadoop-network --name hadoop-slave5 --hostname hadoop-slave5 jorgecardona/hadoop-2.7.7-java-8-cluster-datanode:v1
+# docker run --rm -itd --net=hadoop-network -p 50070:50070 -p 8088:8088 -p 18080:18080 --name hadoop-master --hostname hadoop-master -v $PWD/data:/data jorgecardona/spark-2.4.8-hadoop-2.7-java-8-cluster-namenode:v1
 
 # hadoop 
 # http://localhost:50070
