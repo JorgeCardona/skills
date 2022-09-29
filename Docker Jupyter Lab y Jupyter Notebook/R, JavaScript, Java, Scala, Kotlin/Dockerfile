@@ -1,5 +1,5 @@
 # define la version de python a instalar basado en la imagen oficial
-FROM python:3.10.5
+FROM python:3.10.7
 
 # etiqueta creador de la imagen
 LABEL maintainer="Jorge Cardona"
@@ -8,6 +8,7 @@ LABEL maintainer="Jorge Cardona"
 RUN pip3 -q install pip --upgrade
 RUN pip3 install jupyterlab
 RUN pip3 install itables
+RUN pip3 install faker
 
 # actualiza los repositorios para instalar JAVA
 RUN apt-get update
@@ -56,11 +57,17 @@ ENV TYPE=lab
 # ejecuta los comandos al iniciar jupyter en el contenedor para ejecutar 
 CMD jupyter ${TYPE} --port=8888 --no-browser --ip=0.0.0.0 --allow-root
 
-#Python v3.10.5
+#python -V
+#java --version
+#node -v
+#scala -version
+#R --version
+
+#Python v3.10.7
 #R      v4.0.4
 #Java   v11.0.16
 #NodeJs v12.22.12
-#Scala  v2.11
+#Scala  v2.11.12
 
 # cuando se quiera construir la imagen
 #docker build -t jorgecardona/jupyter:v1 .

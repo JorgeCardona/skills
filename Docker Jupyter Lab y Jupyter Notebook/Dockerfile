@@ -1,5 +1,5 @@
 # define la version de python a instalar basado en la imagen oficial
-FROM python:latest
+FROM python:3.10.7
 
 # etiqueta creador de la imagen
 MAINTAINER JorgeCardona
