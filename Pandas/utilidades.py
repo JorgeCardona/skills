@@ -82,3 +82,29 @@ def crear_dataframes(limite_muestra = 100):
     
     # retorna los diccionarios como dataframes usando la funcion creada para esa conversion
     return pd.DataFrame(diccionario_0), pd.DataFrame(diccionario_1), pd.DataFrame(diccionario_2)
+
+def join_dataframe(primer_dataframe, segundo_dataframe, llaves_para_join = '', tipo_de_join='INNER', mostrar_tipo_join=False, self_join=['','']):
+    
+    import pandas as pd
+
+    # une los dataframe con el JOIN y elimina registros duplicados con .drop_duplicates()
+    if tipo_de_join.lower() == 'cross':
+        dataframe_unido = pd.merge(primer_dataframe.drop_duplicates(), segundo_dataframe.drop_duplicates(), how=tipo_de_join.lower())
+        tipo_join = f"pd.merge(primer_dataframe.drop_duplicates(), segundo_dataframe.drop_duplicates(), how='{tipo_de_join.lower()}')"  
+        
+    elif tipo_de_join.lower() == 'self':
+        dataframe_unido = pd.merge(primer_dataframe.drop_duplicates(), segundo_dataframe.drop_duplicates(), left_on=self_join[0], right_on=self_join[1], how='left', suffixes=['_left','_right'], indicator=mostrar_tipo_join)
+        tipo_join = f"pd.merge(primer_dataframe.drop_duplicates(), segundo_dataframe.drop_duplicates(), left_on={self_join[0]}, right_on={self_join[1]}, how='left', suffixes=['_left','_right'], indicator={mostrar_tipo_join})" 
+        
+    elif tipo_de_join.lower() == 'index':
+        dataframe_unido = pd.merge(primer_dataframe.drop_duplicates(), segundo_dataframe.drop_duplicates(), left_index=True, right_index=True)
+        tipo_join = f"pd.merge(primer_dataframe.drop_duplicates(), segundo_dataframe.drop_duplicates(), how='{tipo_de_join.lower()}')"
+    else:        
+        dataframe_unido = pd.merge(primer_dataframe.drop_duplicates(), segundo_dataframe.drop_duplicates(), on=llaves_para_join, how=tipo_de_join.lower(), indicator=mostrar_tipo_join)
+        dataframe_unido = dataframe_unido.sort_values(by=llaves_para_join, ascending=False)
+        dataframe_unido = dataframe_unido.reset_index()
+        tipo_join = f"pd.merge(primer_dataframe.drop_duplicates(), segundo_dataframe.drop_duplicates(), on={llaves_para_join}, how='{tipo_de_join.lower()}', indicator={mostrar_tipo_join})" 
+       
+    print(tipo_join)
+    
+    return dataframe_unido
