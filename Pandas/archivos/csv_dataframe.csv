@@ -1,101 +1,101 @@
 Id,Lider,Vertebrados,Invertebrados,Ovíparos,Frugívoros,Rumiantes
-1,8,Tortugas galápagos,Ácaros,Paloma,Zorro volador,Vaca
-2,89,Delfines,Tábanos,Avestruz,Orangután,Niala
-3,11,Salamandras sin pulmón,Mariposa sesia,Avestruz,Zarigüeya,Sitatunga
-4,86,Salamandras comunes,Saltamontes,Pingüino,Orangután,Gacela de Grant
-5,22,Basiliscos,Termes,Salmón,Conejo del campo,Bisonte europeo
-6,23,Pirañas,Curilla o aceitera,Cocodrilo,Pacú,Ciervo de los pantanos
-7,66,Pavos,Cochinillas de humedad,Loro,Calandria,Sambar
-8,48,Las agujas de río,Caballito del diablo,Codorniz,Lémur,Venado de las Pampas
-9,94,Monstruos de Gila,Avispas alfareras,Pingüino,Zarigüeya,Antílope de cuatro cuernos
-10,34,Capibaras,Escarabajo fitófago,Gorrión,Zorro volador,Corzo
-11,26,Peces sapo,Avispa scolia,Loro,Lirón,Sambar
-12,23,Cóndores,Avispas sociales,Víbora de cascabel,Zarigüeya,Anoa de montaña
-13,51,Caballos,Termes,Pato,Chinche del campo,Oryx
-14,94,Cabras,Mariposa medioluto,Paloma,Mono aullador,Niala
-15,89,Cigüeñas,Mariposa esfinge colibrí,Gorrión,Tucán,Gamo común
-16,37,Ranas de Darwin,Caracoles,Cóndor,Gibón,Impala
-17,96,Faisanes,Mariposa cervantes,Víbora de cascabel,Perico,Cebú
-18,87,Vacas,Cochinillas de humedad,Águila,Pacú,Bisonte americano
-19,8,Monstruos de Gila,Araña de patas largas,Pato,Zarigüeya,Reno
-20,97,Luciones,Mariposa medioluto,Cigüeña,Loro,Gamo común
-21,99,Cecilias,Araña cangrejo,Abeja,Ardilla,Oveja
-22,92,Iguanas,Mariposa limonera,Paloma,Mosca de la fruta,Ciervo de copete
-23,20,Guacamayas,Hormigas león,Cigüeña,Perico,Bisonte estepario
-24,51,Lenguados,Avispa scolia,Víbora de cascabel,Perico,Oryx
-25,80,Dinosaurios (extintos),Mosquitos,Avestruz,Calandria,Nilgó
-26,96,Faisanes,Mariposa limonera,Cigüeña,Zorro volador,Sambar
-27,37,Gaviotas,Mariposa ajedrezada menor,Águila,Iguana,Reno
-28,97,Salamandras comunes,Chinches,Rana,Mono aullador,Anoa de montaña
-29,52,Lisorofios (extintos),Caracoles,Hormiga,Iguana,Antílope de cuatro cuernos
-30,20,Rinocerontes,Mariposa del almez,Avestruz,Mono aullador,Anoa de montaña
-31,42,Seres humanos,Mariquitas,Águila,Chimpancé,Venado temazate
-32,47,Pelícanos,Caracoles,Loro,Macaco,Reno
-33,100,Monstruos de Gila,Mariposa dorada,Cocodrilo,Lémur,Sitatunga
-34,95,Vacas,Mariposa macaón,Guacamayo,Conejo del campo,Sitatunga
-35,23,Gaviotas,Mariposa cervantes,Salmón,Murciélago frugívoro,Alce irlandés
-36,43,Chimpancés,"Chinche roja, zapatero",Cóndor,Calandria,Búfalo de agua
-37,71,Peces espada,Pulgones,Salmón,Mono Tití,Ciervo común
-38,30,Vacas,Medusas,Avestruz,Pacú,Antílope de cuatro cuernos
-39,18,Ovejas,Larvas,Cóndor,Orangután,Bisonte americano
-40,87,Salamandras comunes,Mariposa esfinge colibrí,Hornero,Tortuga terrestre,Corzuela
-41,93,Ranas venenosas,Mariposa medioluto,Abeja,Gibón,Gacela de Grant
-42,19,Necturos,Escorpiones,Pingüino,Loro,Venado andino
-43,8,Canguros,Pulgas,Águila,Chimpancé,Cabra
-44,35,Ovejas,Avispas excavadoras,Víbora de cascabel,Pacú,Antílope de cuatro cuernos
-45,46,Peces globo,Mariposa macaón,Guacamayo,Perico,Venado temazate
-46,54,Orcas,Grillos,Cocodrilo,Tupaya enana,Ciervo de copete
-47,101,Perros,Mariposa sesia,Abeja,Tupaya enana,Corzuela
-48,27,Peces luna,Avispas alfareras,Abeja,Macaco,Cabra
-49,73,Gallinas,Milpiés,Víbora de cascabel,Zarigüeya,Búfalo cafre
-50,62,Tucanes,Mariposa medioluto,Cocodrilo,Mosca de la fruta,Vaca
-51,15,Avestruces,Mariposa ícaro,Cóndor,Calandria,Llama
-52,47,Cabras,Mantis religiosa,Víbora de cascabel,Loro,Corzuela
-53,68,Cecilias,Mantis religiosa,Loro,Murciélago frugívoro,Apaca
-54,4,Loros,Piojos,Cocodrilo,Macaco,Ciervo de los pantanos
-55,16,Esturiones,Libélulas,Águila,Mono aullador,Corzo
-56,83,Gatos,Piojos,Ganso,Pacú,Bongo
-57,5,Sapos gigantes,Avispas alfareras,Guacamayo,Orangután,Antílope jeroglífico
-58,55,Salamandras comunes,Mosquitos,Avestruz,Lémur,Urial
-59,67,Cocodrilos,Moscas domésticas,Cocodrilo,Tortuga terrestre,Ciervo de copete
-60,78,Proteos,Mariposa macaón,Águila,Calandria,Bisonte europeo
-61,35,Salamandras gigantes chinas,Escarabajo fitófago,Águila,Conejo del campo,Ciervo común
-62,13,Leones,Medusas,Pato,Pacú,Búfalo cafre
-63,88,Lenguados,Saltamontes,Avestruz,Lémur,Venado de las Pampas
-64,21,Salamandras comunes,Araña cangrejo,Gorrión,Lirón,Gacela de Grant
-65,90,Pavos,Chinches,Cocodrilo,Chinche del campo,Búfalo cafre
-66,23,Gallipatos,Abejorros,Hornero,Loro,Ciervo de los pantanos
-67,8,Víboras,Caracoles,Loro,Calandria,Venado de las Pampas
-68,49,Dinosaurios (extintos),Escarabajos,Pato,Perico,Corzuela
-69,30,Pájaros carpinteros,Mariposa esfinge colibrí,Cóndor,Bonobo,Cabra
-70,37,Microsaurios (extintos),Avispas portasierra,Pato,Gibón,Gayal
-71,92,Vacas,Escarabajo,Víbora de cascabel,Perico,Bisonte americano
-72,78,Cabras,Mariposa sesia,Avestruz,Lémur,Antílope de cuatro cuernos
-73,40,Tuátaras de Nueva Zelanda,Avispas portasierra,Avestruz,Tupaya enana,Cabra
-74,52,Hienas,Avispas sociales,Pingüino,Tupaya enana,Sambar
-75,52,Cabras,Ciempiés,Loro,Gibón,Vicuña
-76,73,Cigüeñas,Avispas alfareras,Gallina,Chimpancé,Sambar
-77,16,Pelícanos,Mariposa limonera,Víbora de cascabel,Ardilla,Cebú
-78,77,Cóndores,Estrellas de mar,Pingüino,Pacú,Uapití
-79,6,Loros,Mariposa blanquita de la col,Pato,Orangután,Candelillo
-80,9,Gallinas,Mariposa del almez,Guacamayo,Loro,Venado de las Pampas
-81,87,Buitres,Moscas domésticas,Avestruz,Macaco,Sitatunga
-82,77,Orcas,Libélula emperador,Pingüino,Tortuga terrestre,Antílope jeroglífico
-83,83,Leones,Mariposa ícaro,Gorrión,Tortuga terrestre,Llama
-84,20,Pavos,Mariquitas,Rana,Tucán,Bisonte europeo
-85,68,Microsaurios (extintos),Escarabajo fitófago,Águila,Bonobo,Búfalo cafre
-86,78,Peces sapo,Avispas alfareras,Guacamayo,Gibón,Urial
-87,37,Koi japoneses,Orugas,Cóndor,Mosca de la fruta,Búfalo de agua
-88,25,Guacamayas,Mariposa nacarada,Abeja,Murciélago frugívoro,Venado temazate
-89,18,Peces espada,Cochinillas,Hormiga,Tapir,Ciervo de copete
-90,36,Hienas,Cigarra o chicharra,Hornero,Murciélago frugívoro,Candelillo
-91,3,Dragones de Komodo,Avispa scolia,Salmón,Tapir,Oveja
-92,58,Hienas,Saltamontes,Guacamayo,Loro,Impala
-93,2,Tucanes,Mariquitas,Salmón,Mosca de la fruta,Venado temazate
-94,26,Peces espada,Tábano bombilius,Loro,Murciélago frugívoro,Bongo
-95,64,Colibríes,Arañas,Salmón,Tortuga terrestre,Íbice de los Alpes
-96,43,Ballenas,Mariposa dorada,Avestruz,Tupaya enana,Venado de las Pampas
-97,62,Dragones de Komodo,Cucarachas,Pingüino,Murciélago frugívoro,Venado de las Pampas
-98,65,Lagartos voladores australianos,Cucarachas,Avestruz,Lémur,Vaca
-99,79,Cecilias,Mariposa sesia,Salmón,Lémur,Anoa de llanura
-100,4,Chimpancés,Orugas,Loro,Bonobo,Búfalo de agua
+1,95,Monstruos de Gila,Piojos,Salmón,Gorila,Gacela de Grant
+2,21,Esturiones,Termes,Codorniz,Mosca de la fruta,Antílope jeroglífico
+3,19,Aligátores,Avispas portasierra,Ganso,Calandria,Íbice de los Alpes
+4,85,Peces payaso,Larvas,Hormiga,Pacú,Ciervo de los pantanos
+5,14,Ranas arborícolas,Mariposa blanquita de la col,Rana,Ardilla,Gacela de Grant
+6,61,Cabras,Escorpiones,Cocodrilo,Iguana,Gamo común
+7,54,Ranas de Seychelles,Libélula emperador,Hormiga,Lirón,Impala
+8,58,Salamandras gigantes chinas,Mariposa esfinge colibrí,Rana,Tortuga terrestre,Sambar
+9,72,Cocodrilos,Libélulas,Pingüino,Lémur,Íbice de los Alpes
+10,85,Peces globo,Luciérnaga,Loro,Gibón,Ciervo de copete
+11,67,Los tiburones ballena,Arañas,Cóndor,Bonobo,Ciervo axis
+12,91,Boas constrictoras,Milpiés,Cóndor,Zorro volador,Corzuela
+13,35,Ranas toro africanas,Piojos,Salmón,Murciélago frugívoro,Anoa de montaña
+14,28,Seres humanos,Curilla o aceitera,Cocodrilo,Tortuga terrestre,Ciervo porcino
+15,32,Atunes,Abeja de la miel,Cigüeña,Bonobo,Niala
+16,98,Varanos,Saltamontes,Avestruz,Bonobo,Gayal
+17,99,Sapos corredores,Medusas,Codorniz,Zarigüeya,Cebú
+18,45,Atunes,Curilla o aceitera,Loro,Gibón,Oveja
+19,25,Ranas arborícolas,Medusas,Hornero,Calandria,Ciervo de los pantanos
+20,34,Pavorreales,Milpiés,Gallina,Orangután,Alce irlandés
+21,63,Elefantes,Mosquitos,Codorniz,Gibón,Antílope de cuatro cuernos
+22,3,Salamandras sin pulmón,Araña de patas largas,Paloma,Murciélago frugívoro,Bisonte americano
+23,94,Ranas arcoíris,Mariposa nacarada,Hornero,Murciélago frugívoro,Ciervo de copete
+24,2,Ratones,Ácaros,Loro,Gibón,Ñu
+25,19,Ajolotes,Mariposa dorada,Cocodrilo,Loro,Gayal
+26,22,Canarios,Mariposa cervantes,Cocodrilo,Calandria,Búfalo de agua
+27,41,Guacamayas,Escarabajo,Hornero,Mono aullador,Antílope de cuatro cuernos
+28,77,Peces globo,Tábanos,Hornero,Gibón,Anoa de llanura
+29,30,Lechuzas,Garrapata,Cóndor,Pacú,Íbice de los Alpes
+30,98,Víboras,Mariposa sesia,Salmón,Ardilla,Ciervo axis
+31,34,Seres humanos,Avispa scolia,Gorrión,Zorro volador,Bongo
+32,12,Peces luna,Escarabajos,Salmón,Macaco,Ciervo axis
+33,11,Seres humanos,Mariquitas,Avestruz,Zorro volador,Anoa de montaña
+34,28,Cuervos,Escarabajos,Víbora de cascabel,Zarigüeya,Sitatunga
+35,53,Avestruces,Mariposa nacarada,Gorrión,Lémur,Sitatunga
+36,96,Perros,Orugas,Gallina,Ardilla,Ciervo común
+37,73,Lechuzas,Escarabajos,Guacamayo,Tortuga terrestre,Oveja
+38,43,Capibaras,Polilla,Loro,Lirón,Ciervo axis
+39,51,Sapos comunes,Mariposa nacarada,Salmón,Tapir,Impala
+40,9,Colibríes,Escarabajo,Guacamayo,Mosca de la fruta,Ciervo axis
+41,76,Buitres,Moscardones,Cóndor,Zorro volador,Ciervo axis
+42,16,Koi japoneses,Caracoles,Cocodrilo,Mono aullador,Vicuña
+43,81,Avestruces,Caracoles,Ganso,Pacú,Venado temazate
+44,72,Iguanas,Pulgas,Víbora de cascabel,Pacú,Bisonte americano
+45,89,Águilas,Pulgas,Guacamayo,Mono Tití,Búfalo de agua
+46,67,Luciones,Mariposa del almez,Abeja,Bonobo,Búfalo de agua
+47,2,Leones,Larvas,Salmón,Ardilla,Corzuela
+48,86,Pelícanos,Avispa scolia,Cocodrilo,Iguana,Niala
+49,26,Varanos,Caracoles,Víbora de cascabel,Zarigüeya,Llama
+50,2,Las agujas de río,Grillos,Cóndor,Gibón,Gayal
+51,19,Ranas de Darwin,Cucarachas,Paloma,Tortuga terrestre,Alce
+52,82,Dinosaurios (extintos),Curilla o aceitera,Pingüino,Gorila,Gayal
+53,4,Caballos,Medusas,Avestruz,Tucán,Íbice de los Alpes
+54,24,Las agujas de río,Mariposa medioluto,Paloma,Conejo del campo,Gacela de Grant
+55,36,Gatos,Cucarachas,Pingüino,Calandria,Sambar
+56,11,Rinocerontes,Mariposa cervantes,Ganso,Tucán,Ciervo de los pantanos
+57,83,Koi japoneses,Escarabajo,Avestruz,Chimpancé,Bisonte americano
+58,33,Pterosaurios (extintos),Orugas,Salmón,Lirón,Alce irlandés
+59,85,Lechuzas,Caballito del diablo,Cigüeña,Loro,Niala
+60,70,Cuervos,Caracoles,Abeja,Tupaya enana,Ciervo axis
+61,26,Hienas,Mariposa blanquita de la col,Cigüeña,Perico,Íbice de los Alpes
+62,28,Tortugas galápagos,Mariposa dorada,Gorrión,Macaco,Niala
+63,98,Iguanas,Hormigas león,Rana,Perico,Búfalo cafre
+64,43,Guacamayas,Escarabajos,Pingüino,Tapir,Sambar
+65,95,Dragones de Komodo,Polilla,Águila,Gorila,Corzo
+66,73,Capibaras,Escarabajo,Hornero,Iguana,Bisonte americano
+67,83,Gorilas,Milpiés,Loro,Chinche del campo,Anoa de llanura
+68,45,Aligátores,Mariposa nacarada,Hornero,Zorro volador,Apaca
+69,9,Esturiones,Garrapata,Gorrión,Macaco,Venado temazate
+70,90,Koi japoneses,Arañas,Cigüeña,Zorro volador,Gacela de Grant
+71,97,Leones,Moscas domésticas,Ganso,Macaco,Íbice de los Alpes
+72,93,Pterosaurios (extintos),Mariposa ajedrezada menor,Gorrión,Pacú,Vicuña
+73,82,Cigüeñas,Mariquitas,Gorrión,Lirón,Oveja
+74,78,Ballenas,Mariposa dorada,Cigüeña,Mosca de la fruta,Corzo
+75,74,Lagartos voladores australianos,Chinches,Rana,Perico,Antílope jeroglífico
+76,83,Ranas arborícolas,Libélula emperador,Cóndor,Tortuga terrestre,Vicuña
+77,94,Peces vela,Ácaros,Codorniz,Lémur,Corzo
+78,79,Salamandras gigantes chinas,Mantis religiosa,Abeja,Lémur,Anoa de montaña
+79,39,Hienas,Medusas,Rana,Zarigüeya,Cebú
+80,55,Ballenas,Hormigas león,Ganso,Lémur,Urial
+81,87,Gaviotas,Avispas excavadoras,Codorniz,Chimpancé,Gayal
+82,34,Koi japoneses,Escarabajos,Paloma,Tucán,Ciervo porcino
+83,70,Salamandras sin pulmón,Caballito del diablo,Codorniz,Lirón,Candelillo
+84,11,Peces abisales,Mariposa esfinge colibrí,Pato,Ardilla,Gayal
+85,47,Ranas de Seychelles,Mosquitos,Guacamayo,Mono Tití,Alce
+86,49,Lisorofios (extintos),Mariposa limonera,Rana,Zorro volador,Bisonte americano
+87,86,Bacalaos,Garrapata,Hornero,Tucán,Ciervo axis
+88,73,Faisanes,Mariposa pavo real,Gallina,Murciélago frugívoro,Apaca
+89,74,Las agujas de río,Moscardones,Paloma,Lirón,Impala
+90,77,Víboras,Tábanos,Víbora de cascabel,Tapir,Sambar
+91,3,Sapos comunes,Estrellas de mar,Loro,Tortuga terrestre,Anoa de llanura
+92,64,Pterosaurios (extintos),Abeja de la miel,Ganso,Tupaya enana,Venado de las Pampas
+93,96,Canguros,Mariposa ícaro,Águila,Conejo del campo,Bisonte europeo
+94,1,Peces vela,Araña de patas largas,Paloma,Iguana,Nilgó
+95,90,Dinosaurios (extintos),Cochinillas de humedad,Cocodrilo,Tucán,Apaca
+96,55,Lenguados,Chinches,Cocodrilo,Lirón,Anoa de montaña
+97,54,Cóndores,Abeja de la miel,Ganso,Mono Tití,Gamo común
+98,50,Proteos,Arañas,Ganso,Tortuga terrestre,Ciervo de copete
+99,49,Barracudas,Cochinillas de humedad,Gorrión,Conejo del campo,Toro
+100,75,Ovejas,Orugas,Hormiga,Pacú,Ciervo axis
