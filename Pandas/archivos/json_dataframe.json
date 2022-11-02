@@ -1,902 +1,902 @@
 [
   {
     "Id":1,
-    "Lider":27,
-    "Mam\u00edferos":"Orcas",
-    "Reptiles":"Dragones de Komodo",
-    "Peces":"Peces sapo",
-    "Anfibios":"Sapos comunes",
+    "Lider":42,
+    "Mam\u00edferos":"Vacas",
+    "Reptiles":"Lagartos voladores australianos",
+    "Peces":"Koi japoneses",
+    "Anfibios":"Cecilias",
     "Aves":"Guacamayas"
   },
   {
     "Id":2,
-    "Lider":52,
-    "Mam\u00edferos":"Vacas",
-    "Reptiles":"Luciones",
-    "Peces":"Los tiburones ballena",
-    "Anfibios":"Ranas venenosas",
-    "Aves":"Patos"
+    "Lider":32,
+    "Mam\u00edferos":"Chimpanc\u00e9s",
+    "Reptiles":"Camaleones",
+    "Peces":"Atunes",
+    "Anfibios":"Gallipatos",
+    "Aves":"Loros"
   },
   {
     "Id":3,
-    "Lider":18,
-    "Mam\u00edferos":"Jirafas",
-    "Reptiles":"Lagartos voladores australianos",
-    "Peces":"Peces espada",
-    "Anfibios":"Sapos comunes",
-    "Aves":"Colibr\u00edes"
+    "Lider":41,
+    "Mam\u00edferos":"Leones",
+    "Reptiles":"Cocodrilos",
+    "Peces":"Carpas",
+    "Anfibios":"Ranas de Seychelles",
+    "Aves":"Buitres"
   },
   {
     "Id":4,
-    "Lider":41,
-    "Mam\u00edferos":"Cabras",
-    "Reptiles":"Tu\u00e1taras de Nueva Zelanda",
+    "Lider":94,
+    "Mam\u00edferos":"Vacas",
+    "Reptiles":"Lagartijas comunes",
     "Peces":"Koi japoneses",
-    "Anfibios":"Ranas toro africanas",
-    "Aves":"\u00c1guilas"
-  },
-  {
-    "Id":5,
-    "Lider":24,
-    "Mam\u00edferos":"Delfines",
-    "Reptiles":"Luciones",
-    "Peces":"Esturiones",
-    "Anfibios":"Ranas venenosas",
-    "Aves":"Faisanes"
-  },
-  {
-    "Id":6,
-    "Lider":2,
-    "Mam\u00edferos":"Jirafas",
-    "Reptiles":"Boas constrictoras",
-    "Peces":"Lenguados",
-    "Anfibios":"Ajolotes",
-    "Aves":"Gaviotas"
-  },
-  {
-    "Id":7,
-    "Lider":6,
-    "Mam\u00edferos":"Elefantes",
-    "Reptiles":"Varanos",
-    "Peces":"Las agujas de r\u00edo",
-    "Anfibios":"Ranas toro africanas",
-    "Aves":"Avestruces"
-  },
-  {
-    "Id":8,
-    "Lider":28,
-    "Mam\u00edferos":"Ovejas",
-    "Reptiles":"Tortugas terrestres",
-    "Peces":"Koi japoneses",
-    "Anfibios":"Ranas arco\u00edris",
-    "Aves":"Cuervos"
-  },
-  {
-    "Id":9,
-    "Lider":47,
-    "Mam\u00edferos":"Orcas",
-    "Reptiles":"Pterosaurios (extintos)",
-    "Peces":"Peces globo",
-    "Anfibios":"Necturos",
-    "Aves":"Gallinas"
-  },
-  {
-    "Id":10,
-    "Lider":3,
-    "Mam\u00edferos":"Ballenas",
-    "Reptiles":"Boas constrictoras",
-    "Peces":"Peces abisales",
-    "Anfibios":"Sapos corredores",
-    "Aves":"\u00c1guilas"
-  },
-  {
-    "Id":11,
-    "Lider":1,
-    "Mam\u00edferos":"Caballos",
-    "Reptiles":"Basiliscos",
-    "Peces":"Celacantos (extintos)",
-    "Anfibios":"Ranas venenosas",
-    "Aves":"Canarios"
-  },
-  {
-    "Id":12,
-    "Lider":41,
-    "Mam\u00edferos":"Seres humanos",
-    "Reptiles":"Tortugas acu\u00e1ticas",
-    "Peces":"Koi japoneses",
-    "Anfibios":"Ranas arco\u00edris",
-    "Aves":"Gallinas"
-  },
-  {
-    "Id":13,
-    "Lider":83,
-    "Mam\u00edferos":"Ovejas",
-    "Reptiles":"Dinosaurios (extintos)",
-    "Peces":"Peces payaso",
-    "Anfibios":"Gallipatos",
+    "Anfibios":"Salamandras gigantes chinas",
     "Aves":"Pel\u00edcanos"
   },
   {
-    "Id":14,
-    "Lider":53,
-    "Mam\u00edferos":"Perros",
-    "Reptiles":"Alig\u00e1tores",
-    "Peces":"Tiburones",
-    "Anfibios":"Salamandras comunes",
+    "Id":5,
+    "Lider":14,
+    "Mam\u00edferos":"Ratones",
+    "Reptiles":"Iguanas",
+    "Peces":"Celacantos (extintos)",
+    "Anfibios":"Ranas de Darwin",
+    "Aves":"Tucanes"
+  },
+  {
+    "Id":6,
+    "Lider":32,
+    "Mam\u00edferos":"Hienas",
+    "Reptiles":"Iguanas",
+    "Peces":"Peces payaso",
+    "Anfibios":"Sapos gigantes",
+    "Aves":"Pavos"
+  },
+  {
+    "Id":7,
+    "Lider":36,
+    "Mam\u00edferos":"Leones",
+    "Reptiles":"Luciones",
+    "Peces":"Barracudas",
+    "Anfibios":"Ranas de Darwin",
+    "Aves":"Lechuzas"
+  },
+  {
+    "Id":8,
+    "Lider":7,
+    "Mam\u00edferos":"Caballos",
+    "Reptiles":"Tortugas gal\u00e1pagos",
+    "Peces":"Carpas",
+    "Anfibios":"Necturos",
+    "Aves":"Lechuzas"
+  },
+  {
+    "Id":9,
+    "Lider":100,
+    "Mam\u00edferos":"Ballenas",
+    "Reptiles":"Lagartijas comunes",
+    "Peces":"Anguilas de mar",
+    "Anfibios":"Proteos",
+    "Aves":"\u00c1guilas"
+  },
+  {
+    "Id":10,
+    "Lider":93,
+    "Mam\u00edferos":"Seres humanos",
+    "Reptiles":"Tortugas terrestres",
+    "Peces":"Carpas",
+    "Anfibios":"Proteos",
+    "Aves":"Gaviotas"
+  },
+  {
+    "Id":11,
+    "Lider":99,
+    "Mam\u00edferos":"Orcas",
+    "Reptiles":"Dragones de Komodo",
+    "Peces":"Carpas",
+    "Anfibios":"Gallipatos",
+    "Aves":"Gaviotas"
+  },
+  {
+    "Id":12,
+    "Lider":90,
+    "Mam\u00edferos":"Chimpanc\u00e9s",
+    "Reptiles":"V\u00edboras",
+    "Peces":"Barracudas",
+    "Anfibios":"Ranas venenosas",
+    "Aves":"Avestruces"
+  },
+  {
+    "Id":13,
+    "Lider":17,
+    "Mam\u00edferos":"Rinocerontes",
+    "Reptiles":"Cocodrilos",
+    "Peces":"Carpas",
+    "Anfibios":"Ranas de Darwin",
     "Aves":"Colibr\u00edes"
   },
   {
+    "Id":14,
+    "Lider":1,
+    "Mam\u00edferos":"Gorilas",
+    "Reptiles":"Dinosaurios (extintos)",
+    "Peces":"Peces payaso",
+    "Anfibios":"Ranas arbor\u00edcolas",
+    "Aves":"\u00c1guilas"
+  },
+  {
     "Id":15,
-    "Lider":11,
-    "Mam\u00edferos":"Gatos",
-    "Reptiles":"V\u00edboras",
+    "Lider":39,
+    "Mam\u00edferos":"Cabras",
+    "Reptiles":"Tu\u00e1taras de Nueva Zelanda",
+    "Peces":"Esturiones",
+    "Anfibios":"Ranas de Seychelles",
+    "Aves":"Avestruces"
+  },
+  {
+    "Id":16,
+    "Lider":76,
+    "Mam\u00edferos":"Jirafas",
+    "Reptiles":"Tu\u00e1taras de Nueva Zelanda",
+    "Peces":"Peces luna",
+    "Anfibios":"Cecilias",
+    "Aves":"Avestruces"
+  },
+  {
+    "Id":17,
+    "Lider":46,
+    "Mam\u00edferos":"Elefantes",
+    "Reptiles":"Boas constrictoras",
+    "Peces":"Peces payaso",
+    "Anfibios":"Lisorofios (extintos)",
+    "Aves":"Tucanes"
+  },
+  {
+    "Id":18,
+    "Lider":42,
+    "Mam\u00edferos":"Seres humanos",
+    "Reptiles":"Basiliscos",
+    "Peces":"Lenguados",
+    "Anfibios":"Cecilias",
+    "Aves":"Faisanes"
+  },
+  {
+    "Id":19,
+    "Lider":97,
+    "Mam\u00edferos":"Vacas",
+    "Reptiles":"Pterosaurios (extintos)",
     "Peces":"Pira\u00f1as",
+    "Anfibios":"Ranas toro africanas",
+    "Aves":"Buitres"
+  },
+  {
+    "Id":20,
+    "Lider":77,
+    "Mam\u00edferos":"Vacas",
+    "Reptiles":"Alig\u00e1tores",
+    "Peces":"Esturiones",
+    "Anfibios":"Sapos de ca\u00f1a venenosos",
+    "Aves":"Cig\u00fce\u00f1as"
+  },
+  {
+    "Id":21,
+    "Lider":37,
+    "Mam\u00edferos":"Gatos",
+    "Reptiles":"Luciones",
+    "Peces":"Peces espada",
+    "Anfibios":"Necturos",
+    "Aves":"Avestruces"
+  },
+  {
+    "Id":22,
+    "Lider":24,
+    "Mam\u00edferos":"Ballenas",
+    "Reptiles":"Lagartijas comunes",
+    "Peces":"Atunes",
+    "Anfibios":"Ranas arbor\u00edcolas",
+    "Aves":"Lechuzas"
+  },
+  {
+    "Id":23,
+    "Lider":97,
+    "Mam\u00edferos":"Ratones",
+    "Reptiles":"Boas constrictoras",
+    "Peces":"Bacalaos",
     "Anfibios":"Lisorofios (extintos)",
     "Aves":"Loros"
   },
   {
-    "Id":16,
-    "Lider":78,
-    "Mam\u00edferos":"Cabras",
-    "Reptiles":"Tortugas acu\u00e1ticas",
-    "Peces":"Anguilas de mar",
-    "Anfibios":"Salamandras comunes",
-    "Aves":"Pavos"
-  },
-  {
-    "Id":17,
-    "Lider":94,
-    "Mam\u00edferos":"Caballos",
-    "Reptiles":"Dinosaurios (extintos)",
-    "Peces":"Celacantos (extintos)",
-    "Anfibios":"Ranas arco\u00edris",
-    "Aves":"Avestruces"
-  },
-  {
-    "Id":18,
-    "Lider":50,
-    "Mam\u00edferos":"Gatos",
-    "Reptiles":"Varanos",
-    "Peces":"Carpas",
-    "Anfibios":"Gallipatos",
-    "Aves":"Colibr\u00edes"
-  },
-  {
-    "Id":19,
-    "Lider":21,
-    "Mam\u00edferos":"Orcas",
-    "Reptiles":"Pterosaurios (extintos)",
-    "Peces":"Peces espada",
-    "Anfibios":"Necturos",
-    "Aves":"Colibr\u00edes"
-  },
-  {
-    "Id":20,
-    "Lider":30,
-    "Mam\u00edferos":"Orcas",
-    "Reptiles":"Dragones de Komodo",
-    "Peces":"Los tiburones ballena",
-    "Anfibios":"Salamandras gigantes chinas",
-    "Aves":"Pel\u00edcanos"
-  },
-  {
-    "Id":21,
-    "Lider":16,
-    "Mam\u00edferos":"Canguros",
-    "Reptiles":"Camaleones",
-    "Peces":"Los tiburones ballena",
-    "Anfibios":"Salamandras gigantes chinas",
-    "Aves":"Patos"
-  },
-  {
-    "Id":22,
-    "Lider":85,
-    "Mam\u00edferos":"Chimpanc\u00e9s",
-    "Reptiles":"Monstruos de Gila",
-    "Peces":"Koi japoneses",
-    "Anfibios":"Ranas arco\u00edris",
-    "Aves":"Tucanes"
-  },
-  {
-    "Id":23,
-    "Lider":22,
-    "Mam\u00edferos":"Caballos",
-    "Reptiles":"Tortugas gal\u00e1pagos",
-    "Peces":"Koi japoneses",
-    "Anfibios":"Proteos",
-    "Aves":"Faisanes"
-  },
-  {
     "Id":24,
-    "Lider":69,
-    "Mam\u00edferos":"Gatos",
-    "Reptiles":"Tortugas acu\u00e1ticas",
-    "Peces":"Koi japoneses",
-    "Anfibios":"Ranas toro africanas",
-    "Aves":"P\u00e1jaros carpinteros"
-  },
-  {
-    "Id":25,
-    "Lider":90,
-    "Mam\u00edferos":"Perros",
-    "Reptiles":"Tortugas acu\u00e1ticas",
-    "Peces":"Peces vela",
-    "Anfibios":"Proteos",
-    "Aves":"Pavos"
-  },
-  {
-    "Id":26,
-    "Lider":26,
-    "Mam\u00edferos":"Jirafas",
-    "Reptiles":"Dragones de Komodo",
-    "Peces":"Los tiburones ballena",
-    "Anfibios":"Cecilias",
-    "Aves":"Tucanes"
-  },
-  {
-    "Id":27,
-    "Lider":59,
-    "Mam\u00edferos":"Orcas",
-    "Reptiles":"Luciones",
-    "Peces":"Celacantos (extintos)",
-    "Anfibios":"Ranas de Seychelles",
-    "Aves":"Patos"
-  },
-  {
-    "Id":28,
-    "Lider":74,
-    "Mam\u00edferos":"Ovejas",
+    "Lider":71,
+    "Mam\u00edferos":"Rinocerontes",
     "Reptiles":"Mosasaurios (extintos)",
     "Peces":"Peces luna",
     "Anfibios":"Necturos",
-    "Aves":"Tucanes"
-  },
-  {
-    "Id":29,
-    "Lider":85,
-    "Mam\u00edferos":"Vacas",
-    "Reptiles":"Tu\u00e1taras de Nueva Zelanda",
-    "Peces":"Tiburones",
-    "Anfibios":"Ranas toro africanas",
-    "Aves":"Pavorreales"
-  },
-  {
-    "Id":30,
-    "Lider":35,
-    "Mam\u00edferos":"Hienas",
-    "Reptiles":"Basiliscos",
-    "Peces":"Anguilas de mar",
-    "Anfibios":"Ranas de Darwin",
-    "Aves":"Gallinas"
-  },
-  {
-    "Id":31,
-    "Lider":83,
-    "Mam\u00edferos":"Elefantes",
-    "Reptiles":"Camaleones",
-    "Peces":"Celacantos (extintos)",
-    "Anfibios":"Ranas arbor\u00edcolas",
     "Aves":"C\u00f3ndores"
   },
   {
-    "Id":32,
-    "Lider":40,
-    "Mam\u00edferos":"Capibaras",
-    "Reptiles":"Camaleones",
-    "Peces":"Koi japoneses",
-    "Anfibios":"Salamandras gigantes chinas",
-    "Aves":"Pavos"
+    "Id":25,
+    "Lider":48,
+    "Mam\u00edferos":"Hienas",
+    "Reptiles":"Luciones",
+    "Peces":"Los tiburones ballena",
+    "Anfibios":"Ajolotes",
+    "Aves":"Loros"
   },
   {
-    "Id":33,
-    "Lider":77,
-    "Mam\u00edferos":"Gatos",
-    "Reptiles":"Mosasaurios (extintos)",
-    "Peces":"Barracudas",
-    "Anfibios":"Sapos gigantes",
-    "Aves":"Cuervos"
-  },
-  {
-    "Id":34,
-    "Lider":72,
-    "Mam\u00edferos":"Elefantes",
-    "Reptiles":"Camaleones",
-    "Peces":"Celacantos (extintos)",
-    "Anfibios":"Salamandras sin pulm\u00f3n",
-    "Aves":"Gaviotas"
-  },
-  {
-    "Id":35,
-    "Lider":74,
-    "Mam\u00edferos":"Leones",
-    "Reptiles":"Cocodrilos",
-    "Peces":"Barracudas",
-    "Anfibios":"Salamandras gigantes chinas",
-    "Aves":"Cig\u00fce\u00f1as"
-  },
-  {
-    "Id":36,
-    "Lider":20,
-    "Mam\u00edferos":"Caballos",
-    "Reptiles":"V\u00edboras",
-    "Peces":"Peces abisales",
-    "Anfibios":"Gallipatos",
-    "Aves":"Canarios"
-  },
-  {
-    "Id":37,
-    "Lider":87,
-    "Mam\u00edferos":"Capibaras",
-    "Reptiles":"Tortugas acu\u00e1ticas",
-    "Peces":"Anguilas de mar",
+    "Id":26,
+    "Lider":86,
+    "Mam\u00edferos":"Orcas",
+    "Reptiles":"Basiliscos",
+    "Peces":"Tiburones",
     "Anfibios":"Ranas arco\u00edris",
     "Aves":"Buitres"
   },
   {
-    "Id":38,
-    "Lider":56,
-    "Mam\u00edferos":"Seres humanos",
+    "Id":27,
+    "Lider":82,
+    "Mam\u00edferos":"Delfines",
     "Reptiles":"Luciones",
-    "Peces":"Atunes",
+    "Peces":"Anguilas de mar",
+    "Anfibios":"Salamandras sin pulm\u00f3n",
+    "Aves":"Lechuzas"
+  },
+  {
+    "Id":28,
+    "Lider":16,
+    "Mam\u00edferos":"Ratones",
+    "Reptiles":"Tortugas acu\u00e1ticas",
+    "Peces":"Peces luna",
+    "Anfibios":"Lisorofios (extintos)",
+    "Aves":"Faisanes"
+  },
+  {
+    "Id":29,
+    "Lider":5,
+    "Mam\u00edferos":"Elefantes",
+    "Reptiles":"Iguanas",
+    "Peces":"Anguilas de mar",
+    "Anfibios":"Salamandras sin pulm\u00f3n",
+    "Aves":"Pavos"
+  },
+  {
+    "Id":30,
+    "Lider":91,
+    "Mam\u00edferos":"Cabras",
+    "Reptiles":"Tu\u00e1taras de Nueva Zelanda",
+    "Peces":"Barracudas",
+    "Anfibios":"Ranas arbor\u00edcolas",
+    "Aves":"Pel\u00edcanos"
+  },
+  {
+    "Id":31,
+    "Lider":21,
+    "Mam\u00edferos":"Orcas",
+    "Reptiles":"Iguanas",
+    "Peces":"Peces abisales",
+    "Anfibios":"Sapos comunes",
+    "Aves":"Colibr\u00edes"
+  },
+  {
+    "Id":32,
+    "Lider":101,
+    "Mam\u00edferos":"Cabras",
+    "Reptiles":"Lagartos voladores australianos",
+    "Peces":"Bacalaos",
+    "Anfibios":"Ranas arbor\u00edcolas",
+    "Aves":"P\u00e1jaros carpinteros"
+  },
+  {
+    "Id":33,
+    "Lider":56,
+    "Mam\u00edferos":"Jirafas",
+    "Reptiles":"Tortugas terrestres",
+    "Peces":"Peces sapo",
+    "Anfibios":"Sapos gigantes",
+    "Aves":"Pavos"
+  },
+  {
+    "Id":34,
+    "Lider":18,
+    "Mam\u00edferos":"Capibaras",
+    "Reptiles":"Camaleones",
+    "Peces":"Las agujas de r\u00edo",
+    "Anfibios":"Salamandras sin pulm\u00f3n",
+    "Aves":"Buitres"
+  },
+  {
+    "Id":35,
+    "Lider":73,
+    "Mam\u00edferos":"Delfines",
+    "Reptiles":"Alig\u00e1tores",
+    "Peces":"Peces abisales",
+    "Anfibios":"Ranas toro africanas",
+    "Aves":"Lechuzas"
+  },
+  {
+    "Id":36,
+    "Lider":17,
+    "Mam\u00edferos":"Ballenas",
+    "Reptiles":"Tortugas gal\u00e1pagos",
+    "Peces":"Carpas",
+    "Anfibios":"Ranas de Darwin",
+    "Aves":"C\u00f3ndores"
+  },
+  {
+    "Id":37,
+    "Lider":85,
+    "Mam\u00edferos":"Jirafas",
+    "Reptiles":"Varanos",
+    "Peces":"Peces vela",
     "Anfibios":"Lisorofios (extintos)",
     "Aves":"Lechuzas"
+  },
+  {
+    "Id":38,
+    "Lider":36,
+    "Mam\u00edferos":"Cabras",
+    "Reptiles":"Tu\u00e1taras de Nueva Zelanda",
+    "Peces":"Peces vela",
+    "Anfibios":"Salamandras sin pulm\u00f3n",
+    "Aves":"Cuervos"
   },
   {
     "Id":39,
     "Lider":84,
-    "Mam\u00edferos":"Leones",
-    "Reptiles":"V\u00edboras",
-    "Peces":"Peces espada",
-    "Anfibios":"Ajolotes",
-    "Aves":"C\u00f3ndores"
-  },
-  {
-    "Id":40,
-    "Lider":77,
-    "Mam\u00edferos":"Delfines",
-    "Reptiles":"Lagartijas comunes",
+    "Mam\u00edferos":"Ovejas",
+    "Reptiles":"Monstruos de Gila",
     "Peces":"Pira\u00f1as",
     "Anfibios":"Gallipatos",
-    "Aves":"Guacamayas"
-  },
-  {
-    "Id":41,
-    "Lider":31,
-    "Mam\u00edferos":"Ballenas",
-    "Reptiles":"Tortugas gal\u00e1pagos",
-    "Peces":"Peces sapo",
-    "Anfibios":"Ranas de Seychelles",
     "Aves":"Gaviotas"
   },
   {
-    "Id":42,
+    "Id":40,
+    "Lider":66,
+    "Mam\u00edferos":"Caballos",
+    "Reptiles":"Monstruos de Gila",
+    "Peces":"Peces vela",
+    "Anfibios":"Salamandras sin pulm\u00f3n",
+    "Aves":"Cig\u00fce\u00f1as"
+  },
+  {
+    "Id":41,
     "Lider":61,
-    "Mam\u00edferos":"Gorilas",
-    "Reptiles":"Alig\u00e1tores",
-    "Peces":"Bacalaos",
-    "Anfibios":"Sapos corredores",
+    "Mam\u00edferos":"Rinocerontes",
+    "Reptiles":"Tortugas acu\u00e1ticas",
+    "Peces":"Las agujas de r\u00edo",
+    "Anfibios":"Lisorofios (extintos)",
+    "Aves":"Cig\u00fce\u00f1as"
+  },
+  {
+    "Id":42,
+    "Lider":18,
+    "Mam\u00edferos":"Seres humanos",
+    "Reptiles":"Tu\u00e1taras de Nueva Zelanda",
+    "Peces":"Peces payaso",
+    "Anfibios":"Ranas de Seychelles",
     "Aves":"Loros"
   },
   {
     "Id":43,
-    "Lider":67,
-    "Mam\u00edferos":"Ovejas",
-    "Reptiles":"V\u00edboras",
-    "Peces":"Peces espada",
-    "Anfibios":"Ranas venenosas",
-    "Aves":"Loros"
+    "Lider":38,
+    "Mam\u00edferos":"Seres humanos",
+    "Reptiles":"Dinosaurios (extintos)",
+    "Peces":"Peces abisales",
+    "Anfibios":"Ranas de Seychelles",
+    "Aves":"P\u00e1jaros carpinteros"
   },
   {
     "Id":44,
-    "Lider":69,
-    "Mam\u00edferos":"Delfines",
-    "Reptiles":"Luciones",
-    "Peces":"Las agujas de r\u00edo",
-    "Anfibios":"Ranas toro africanas",
-    "Aves":"Pavorreales"
-  },
-  {
-    "Id":45,
-    "Lider":99,
-    "Mam\u00edferos":"Chimpanc\u00e9s",
-    "Reptiles":"Tortugas terrestres",
-    "Peces":"Los tiburones ballena",
-    "Anfibios":"Ranas toro africanas",
-    "Aves":"P\u00e1jaros carpinteros"
-  },
-  {
-    "Id":46,
-    "Lider":42,
-    "Mam\u00edferos":"Hienas",
-    "Reptiles":"Varanos",
-    "Peces":"Carpas",
+    "Lider":49,
+    "Mam\u00edferos":"Ballenas",
+    "Reptiles":"Lagartijas comunes",
+    "Peces":"Atunes",
     "Anfibios":"Necturos",
-    "Aves":"Avestruces"
-  },
-  {
-    "Id":47,
-    "Lider":6,
-    "Mam\u00edferos":"Rinocerontes",
-    "Reptiles":"Tu\u00e1taras de Nueva Zelanda",
-    "Peces":"Peces globo",
-    "Anfibios":"Necturos",
-    "Aves":"P\u00e1jaros carpinteros"
-  },
-  {
-    "Id":48,
-    "Lider":11,
-    "Mam\u00edferos":"Caballos",
-    "Reptiles":"Dinosaurios (extintos)",
-    "Peces":"Carpas",
-    "Anfibios":"Sapos de ca\u00f1a venenosos",
     "Aves":"Gaviotas"
   },
   {
-    "Id":49,
-    "Lider":13,
-    "Mam\u00edferos":"Rinocerontes",
-    "Reptiles":"Tu\u00e1taras de Nueva Zelanda",
+    "Id":45,
+    "Lider":34,
+    "Mam\u00edferos":"Ratones",
+    "Reptiles":"V\u00edboras",
+    "Peces":"Tiburones",
+    "Anfibios":"Salamandras comunes",
+    "Aves":"Loros"
+  },
+  {
+    "Id":46,
+    "Lider":94,
+    "Mam\u00edferos":"Canguros",
+    "Reptiles":"Cocodrilos",
     "Peces":"Atunes",
     "Anfibios":"Sapos de ca\u00f1a venenosos",
-    "Aves":"Cig\u00fce\u00f1as"
-  },
-  {
-    "Id":50,
-    "Lider":12,
-    "Mam\u00edferos":"Jirafas",
-    "Reptiles":"Alig\u00e1tores",
-    "Peces":"Peces sapo",
-    "Anfibios":"Ranas de Darwin",
-    "Aves":"Gallinas"
-  },
-  {
-    "Id":51,
-    "Lider":53,
-    "Mam\u00edferos":"Capibaras",
-    "Reptiles":"Tortugas terrestres",
-    "Peces":"Peces espada",
-    "Anfibios":"Salamandras gigantes chinas",
     "Aves":"Faisanes"
   },
   {
-    "Id":52,
-    "Lider":58,
-    "Mam\u00edferos":"Leones",
-    "Reptiles":"Camaleones",
-    "Peces":"Pira\u00f1as",
+    "Id":47,
+    "Lider":66,
+    "Mam\u00edferos":"Canguros",
+    "Reptiles":"Lagartijas comunes",
+    "Peces":"Barracudas",
+    "Anfibios":"Sapos gigantes",
+    "Aves":"Guacamayas"
+  },
+  {
+    "Id":48,
+    "Lider":7,
+    "Mam\u00edferos":"Gorilas",
+    "Reptiles":"Mosasaurios (extintos)",
+    "Peces":"Peces globo",
     "Anfibios":"Salamandras sin pulm\u00f3n",
+    "Aves":"Avestruces"
+  },
+  {
+    "Id":49,
+    "Lider":93,
+    "Mam\u00edferos":"Hienas",
+    "Reptiles":"Tortugas acu\u00e1ticas",
+    "Peces":"Peces abisales",
+    "Anfibios":"Ajolotes",
+    "Aves":"Guacamayas"
+  },
+  {
+    "Id":50,
+    "Lider":34,
+    "Mam\u00edferos":"Capibaras",
+    "Reptiles":"Iguanas",
+    "Peces":"Anguilas de mar",
+    "Anfibios":"Ranas de Darwin",
+    "Aves":"Buitres"
+  },
+  {
+    "Id":51,
+    "Lider":46,
+    "Mam\u00edferos":"Caballos",
+    "Reptiles":"Boas constrictoras",
+    "Peces":"Lenguados",
+    "Anfibios":"Sapos gigantes",
     "Aves":"\u00c1guilas"
   },
   {
-    "Id":53,
-    "Lider":57,
-    "Mam\u00edferos":"Elefantes",
+    "Id":52,
+    "Lider":75,
+    "Mam\u00edferos":"Jirafas",
     "Reptiles":"Camaleones",
-    "Peces":"Peces espada",
-    "Anfibios":"Ranas venenosas",
-    "Aves":"Tucanes"
+    "Peces":"Bacalaos",
+    "Anfibios":"Sapos corredores",
+    "Aves":"Cig\u00fce\u00f1as"
+  },
+  {
+    "Id":53,
+    "Lider":60,
+    "Mam\u00edferos":"Ratones",
+    "Reptiles":"Tortugas gal\u00e1pagos",
+    "Peces":"Esturiones",
+    "Anfibios":"Proteos",
+    "Aves":"Loros"
   },
   {
     "Id":54,
-    "Lider":69,
-    "Mam\u00edferos":"Perros",
-    "Reptiles":"Cocodrilos",
-    "Peces":"Peces abisales",
-    "Anfibios":"Ranas arco\u00edris",
-    "Aves":"Pavos"
-  },
-  {
-    "Id":55,
-    "Lider":27,
-    "Mam\u00edferos":"Gatos",
-    "Reptiles":"Tortugas acu\u00e1ticas",
-    "Peces":"Koi japoneses",
-    "Anfibios":"Ranas arbor\u00edcolas",
-    "Aves":"Buitres"
-  },
-  {
-    "Id":56,
-    "Lider":93,
-    "Mam\u00edferos":"Leones",
-    "Reptiles":"Lagartijas comunes",
-    "Peces":"Atunes",
-    "Anfibios":"Salamandras sin pulm\u00f3n",
-    "Aves":"Pel\u00edcanos"
-  },
-  {
-    "Id":57,
-    "Lider":57,
-    "Mam\u00edferos":"Hienas",
-    "Reptiles":"Basiliscos",
-    "Peces":"Barracudas",
-    "Anfibios":"Ranas venenosas",
+    "Lider":59,
+    "Mam\u00edferos":"Ovejas",
+    "Reptiles":"Lagartos voladores australianos",
+    "Peces":"Peces globo",
+    "Anfibios":"Cecilias",
     "Aves":"Patos"
   },
   {
+    "Id":55,
+    "Lider":92,
+    "Mam\u00edferos":"Jirafas",
+    "Reptiles":"Cocodrilos",
+    "Peces":"Esturiones",
+    "Anfibios":"Lisorofios (extintos)",
+    "Aves":"Patos"
+  },
+  {
+    "Id":56,
+    "Lider":25,
+    "Mam\u00edferos":"Caballos",
+    "Reptiles":"V\u00edboras",
+    "Peces":"Lenguados",
+    "Anfibios":"Ranas venenosas",
+    "Aves":"Faisanes"
+  },
+  {
+    "Id":57,
+    "Lider":58,
+    "Mam\u00edferos":"Vacas",
+    "Reptiles":"Iguanas",
+    "Peces":"Los tiburones ballena",
+    "Anfibios":"Salamandras comunes",
+    "Aves":"Pavorreales"
+  },
+  {
     "Id":58,
-    "Lider":101,
-    "Mam\u00edferos":"Ratones",
-    "Reptiles":"Monstruos de Gila",
-    "Peces":"Tiburones",
-    "Anfibios":"Proteos",
-    "Aves":"Buitres"
+    "Lider":32,
+    "Mam\u00edferos":"Chimpanc\u00e9s",
+    "Reptiles":"V\u00edboras",
+    "Peces":"Peces espada",
+    "Anfibios":"Microsaurios (extintos)",
+    "Aves":"Pel\u00edcanos"
   },
   {
     "Id":59,
-    "Lider":20,
-    "Mam\u00edferos":"Vacas",
-    "Reptiles":"Dragones de Komodo",
-    "Peces":"Pira\u00f1as",
-    "Anfibios":"Sapos gigantes",
+    "Lider":44,
+    "Mam\u00edferos":"Delfines",
+    "Reptiles":"Alig\u00e1tores",
+    "Peces":"Tiburones",
+    "Anfibios":"Ranas venenosas",
     "Aves":"Avestruces"
   },
   {
     "Id":60,
-    "Lider":17,
-    "Mam\u00edferos":"Chimpanc\u00e9s",
-    "Reptiles":"Varanos",
-    "Peces":"Pira\u00f1as",
-    "Anfibios":"Microsaurios (extintos)",
-    "Aves":"\u00c1guilas"
+    "Lider":34,
+    "Mam\u00edferos":"Perros",
+    "Reptiles":"Tortugas acu\u00e1ticas",
+    "Peces":"Barracudas",
+    "Anfibios":"Ranas venenosas",
+    "Aves":"Faisanes"
   },
   {
     "Id":61,
-    "Lider":68,
-    "Mam\u00edferos":"Ballenas",
-    "Reptiles":"Dragones de Komodo",
-    "Peces":"Lenguados",
-    "Anfibios":"Ranas de Seychelles",
-    "Aves":"Tucanes"
-  },
-  {
-    "Id":62,
-    "Lider":96,
-    "Mam\u00edferos":"Leones",
-    "Reptiles":"Tortugas gal\u00e1pagos",
-    "Peces":"Anguilas de mar",
-    "Anfibios":"Lisorofios (extintos)",
-    "Aves":"\u00c1guilas"
-  },
-  {
-    "Id":63,
-    "Lider":98,
-    "Mam\u00edferos":"Seres humanos",
-    "Reptiles":"Alig\u00e1tores",
-    "Peces":"Barracudas",
-    "Anfibios":"Ranas arco\u00edris",
-    "Aves":"P\u00e1jaros carpinteros"
-  },
-  {
-    "Id":64,
-    "Lider":24,
-    "Mam\u00edferos":"Ratones",
-    "Reptiles":"Mosasaurios (extintos)",
-    "Peces":"Peces vela",
-    "Anfibios":"Necturos",
-    "Aves":"Cuervos"
-  },
-  {
-    "Id":65,
-    "Lider":52,
-    "Mam\u00edferos":"Caballos",
-    "Reptiles":"Basiliscos",
-    "Peces":"Peces payaso",
-    "Anfibios":"Necturos",
-    "Aves":"Tucanes"
-  },
-  {
-    "Id":66,
-    "Lider":71,
-    "Mam\u00edferos":"Elefantes",
-    "Reptiles":"Tortugas acu\u00e1ticas",
-    "Peces":"Lenguados",
-    "Anfibios":"Proteos",
-    "Aves":"Gaviotas"
-  },
-  {
-    "Id":67,
-    "Lider":56,
-    "Mam\u00edferos":"Orcas",
-    "Reptiles":"Dragones de Komodo",
-    "Peces":"Anguilas de mar",
-    "Anfibios":"Ranas de Darwin",
-    "Aves":"Pavorreales"
-  },
-  {
-    "Id":68,
-    "Lider":47,
-    "Mam\u00edferos":"Cabras",
-    "Reptiles":"Tortugas gal\u00e1pagos",
-    "Peces":"Los tiburones ballena",
-    "Anfibios":"Microsaurios (extintos)",
-    "Aves":"Patos"
-  },
-  {
-    "Id":69,
-    "Lider":77,
-    "Mam\u00edferos":"Gatos",
-    "Reptiles":"Lagartijas comunes",
-    "Peces":"Anguilas de mar",
-    "Anfibios":"Ranas de Seychelles",
-    "Aves":"Guacamayas"
-  },
-  {
-    "Id":70,
-    "Lider":68,
-    "Mam\u00edferos":"Elefantes",
-    "Reptiles":"Dragones de Komodo",
-    "Peces":"Los tiburones ballena",
-    "Anfibios":"Microsaurios (extintos)",
-    "Aves":"Pavorreales"
-  },
-  {
-    "Id":71,
-    "Lider":42,
-    "Mam\u00edferos":"Jirafas",
-    "Reptiles":"Lagartos voladores australianos",
-    "Peces":"Peces abisales",
-    "Anfibios":"Sapos gigantes",
-    "Aves":"\u00c1guilas"
-  },
-  {
-    "Id":72,
-    "Lider":56,
-    "Mam\u00edferos":"Elefantes",
-    "Reptiles":"Dragones de Komodo",
-    "Peces":"Peces vela",
-    "Anfibios":"Salamandras gigantes chinas",
-    "Aves":"Pel\u00edcanos"
-  },
-  {
-    "Id":73,
-    "Lider":18,
-    "Mam\u00edferos":"Capibaras",
-    "Reptiles":"Varanos",
-    "Peces":"Carpas",
-    "Anfibios":"Ranas de Seychelles",
-    "Aves":"Cig\u00fce\u00f1as"
-  },
-  {
-    "Id":74,
-    "Lider":97,
-    "Mam\u00edferos":"Chimpanc\u00e9s",
-    "Reptiles":"Pterosaurios (extintos)",
-    "Peces":"Barracudas",
-    "Anfibios":"Sapos comunes",
-    "Aves":"Avestruces"
-  },
-  {
-    "Id":75,
-    "Lider":42,
-    "Mam\u00edferos":"Orcas",
-    "Reptiles":"Tu\u00e1taras de Nueva Zelanda",
-    "Peces":"Peces globo",
-    "Anfibios":"Ranas de Darwin",
-    "Aves":"Avestruces"
-  },
-  {
-    "Id":76,
-    "Lider":77,
-    "Mam\u00edferos":"Ratones",
-    "Reptiles":"Lagartos voladores australianos",
-    "Peces":"Las agujas de r\u00edo",
-    "Anfibios":"Salamandras comunes",
-    "Aves":"\u00c1guilas"
-  },
-  {
-    "Id":77,
-    "Lider":46,
-    "Mam\u00edferos":"Hienas",
-    "Reptiles":"Camaleones",
-    "Peces":"Carpas",
-    "Anfibios":"Ranas toro africanas",
-    "Aves":"Avestruces"
-  },
-  {
-    "Id":78,
-    "Lider":54,
-    "Mam\u00edferos":"Seres humanos",
-    "Reptiles":"Varanos",
-    "Peces":"Celacantos (extintos)",
-    "Anfibios":"Salamandras gigantes chinas",
-    "Aves":"Cig\u00fce\u00f1as"
-  },
-  {
-    "Id":79,
-    "Lider":87,
-    "Mam\u00edferos":"Chimpanc\u00e9s",
-    "Reptiles":"Tortugas acu\u00e1ticas",
-    "Peces":"Lenguados",
-    "Anfibios":"Gallipatos",
-    "Aves":"Lechuzas"
-  },
-  {
-    "Id":80,
-    "Lider":22,
-    "Mam\u00edferos":"Rinocerontes",
-    "Reptiles":"Iguanas",
-    "Peces":"Los tiburones ballena",
-    "Anfibios":"Sapos gigantes",
-    "Aves":"Cig\u00fce\u00f1as"
-  },
-  {
-    "Id":81,
-    "Lider":68,
-    "Mam\u00edferos":"Elefantes",
-    "Reptiles":"Alig\u00e1tores",
-    "Peces":"Atunes",
-    "Anfibios":"Sapos de ca\u00f1a venenosos",
-    "Aves":"C\u00f3ndores"
-  },
-  {
-    "Id":82,
-    "Lider":88,
-    "Mam\u00edferos":"Ratones",
-    "Reptiles":"Iguanas",
-    "Peces":"Las agujas de r\u00edo",
-    "Anfibios":"Microsaurios (extintos)",
-    "Aves":"Lechuzas"
-  },
-  {
-    "Id":83,
-    "Lider":45,
-    "Mam\u00edferos":"Orcas",
-    "Reptiles":"Lagartos voladores australianos",
-    "Peces":"Lenguados",
-    "Anfibios":"Ranas arco\u00edris",
-    "Aves":"Gallinas"
-  },
-  {
-    "Id":84,
-    "Lider":59,
-    "Mam\u00edferos":"Orcas",
-    "Reptiles":"Varanos",
-    "Peces":"Peces luna",
-    "Anfibios":"Ranas toro africanas",
-    "Aves":"Cuervos"
-  },
-  {
-    "Id":85,
-    "Lider":19,
-    "Mam\u00edferos":"Ratones",
-    "Reptiles":"V\u00edboras",
-    "Peces":"Lenguados",
-    "Anfibios":"Ranas venenosas",
-    "Aves":"Gaviotas"
-  },
-  {
-    "Id":86,
-    "Lider":66,
-    "Mam\u00edferos":"Hienas",
-    "Reptiles":"Boas constrictoras",
-    "Peces":"Bacalaos",
-    "Anfibios":"Salamandras gigantes chinas",
-    "Aves":"Faisanes"
-  },
-  {
-    "Id":87,
-    "Lider":75,
-    "Mam\u00edferos":"Jirafas",
-    "Reptiles":"V\u00edboras",
-    "Peces":"Los tiburones ballena",
-    "Anfibios":"Gallipatos",
-    "Aves":"Patos"
-  },
-  {
-    "Id":88,
-    "Lider":48,
-    "Mam\u00edferos":"Capibaras",
-    "Reptiles":"Tu\u00e1taras de Nueva Zelanda",
-    "Peces":"Los tiburones ballena",
-    "Anfibios":"Ranas de Darwin",
-    "Aves":"Avestruces"
-  },
-  {
-    "Id":89,
-    "Lider":91,
-    "Mam\u00edferos":"Jirafas",
-    "Reptiles":"Dragones de Komodo",
-    "Peces":"Esturiones",
-    "Anfibios":"Ranas arco\u00edris",
-    "Aves":"Gallinas"
-  },
-  {
-    "Id":90,
-    "Lider":19,
-    "Mam\u00edferos":"Chimpanc\u00e9s",
-    "Reptiles":"Iguanas",
-    "Peces":"Peces sapo",
-    "Anfibios":"Cecilias",
-    "Aves":"Gallinas"
-  },
-  {
-    "Id":91,
-    "Lider":72,
-    "Mam\u00edferos":"Ratones",
-    "Reptiles":"Monstruos de Gila",
-    "Peces":"Celacantos (extintos)",
-    "Anfibios":"Lisorofios (extintos)",
-    "Aves":"Lechuzas"
-  },
-  {
-    "Id":92,
-    "Lider":69,
-    "Mam\u00edferos":"Chimpanc\u00e9s",
-    "Reptiles":"Mosasaurios (extintos)",
-    "Peces":"Peces payaso",
-    "Anfibios":"Ranas arco\u00edris",
-    "Aves":"Gaviotas"
-  },
-  {
-    "Id":93,
     "Lider":70,
-    "Mam\u00edferos":"Canguros",
-    "Reptiles":"Monstruos de Gila",
-    "Peces":"Pira\u00f1as",
-    "Anfibios":"Cecilias",
-    "Aves":"Faisanes"
-  },
-  {
-    "Id":94,
-    "Lider":97,
-    "Mam\u00edferos":"Ballenas",
-    "Reptiles":"Varanos",
-    "Peces":"Lenguados",
-    "Anfibios":"Gallipatos",
-    "Aves":"Gaviotas"
-  },
-  {
-    "Id":95,
-    "Lider":41,
-    "Mam\u00edferos":"Hienas",
-    "Reptiles":"Iguanas",
-    "Peces":"Anguilas de mar",
-    "Anfibios":"Ranas arco\u00edris",
-    "Aves":"\u00c1guilas"
-  },
-  {
-    "Id":96,
-    "Lider":65,
-    "Mam\u00edferos":"Ratones",
-    "Reptiles":"Alig\u00e1tores",
-    "Peces":"Tiburones",
-    "Anfibios":"Sapos comunes",
-    "Aves":"Gaviotas"
-  },
-  {
-    "Id":97,
-    "Lider":52,
-    "Mam\u00edferos":"Gatos",
+    "Mam\u00edferos":"Leones",
     "Reptiles":"Tortugas terrestres",
-    "Peces":"Peces globo",
-    "Anfibios":"Necturos",
-    "Aves":"Faisanes"
-  },
-  {
-    "Id":98,
-    "Lider":50,
-    "Mam\u00edferos":"Hienas",
-    "Reptiles":"Mosasaurios (extintos)",
-    "Peces":"Peces payaso",
-    "Anfibios":"Ranas arbor\u00edcolas",
+    "Peces":"Esturiones",
+    "Anfibios":"Proteos",
     "Aves":"Pavos"
   },
   {
-    "Id":99,
-    "Lider":30,
-    "Mam\u00edferos":"Caballos",
-    "Reptiles":"Boas constrictoras",
+    "Id":62,
+    "Lider":84,
+    "Mam\u00edferos":"Leones",
+    "Reptiles":"Lagartos voladores australianos",
+    "Peces":"Lenguados",
+    "Anfibios":"Gallipatos",
+    "Aves":"Buitres"
+  },
+  {
+    "Id":63,
+    "Lider":8,
+    "Mam\u00edferos":"Hienas",
+    "Reptiles":"Camaleones",
+    "Peces":"Esturiones",
+    "Anfibios":"Sapos comunes",
+    "Aves":"Faisanes"
+  },
+  {
+    "Id":64,
+    "Lider":43,
+    "Mam\u00edferos":"Rinocerontes",
+    "Reptiles":"Dragones de Komodo",
+    "Peces":"Las agujas de r\u00edo",
+    "Anfibios":"Ajolotes",
+    "Aves":"Loros"
+  },
+  {
+    "Id":65,
+    "Lider":91,
+    "Mam\u00edferos":"Canguros",
+    "Reptiles":"Tortugas terrestres",
+    "Peces":"Los tiburones ballena",
+    "Anfibios":"Ranas arbor\u00edcolas",
+    "Aves":"Patos"
+  },
+  {
+    "Id":66,
+    "Lider":85,
+    "Mam\u00edferos":"Orcas",
+    "Reptiles":"Pterosaurios (extintos)",
+    "Peces":"Peces vela",
+    "Anfibios":"Ajolotes",
+    "Aves":"Avestruces"
+  },
+  {
+    "Id":67,
+    "Lider":45,
+    "Mam\u00edferos":"Gatos",
+    "Reptiles":"Monstruos de Gila",
     "Peces":"Peces payaso",
-    "Anfibios":"Ranas de Seychelles",
+    "Anfibios":"Ajolotes",
+    "Aves":"Lechuzas"
+  },
+  {
+    "Id":68,
+    "Lider":50,
+    "Mam\u00edferos":"Ballenas",
+    "Reptiles":"Pterosaurios (extintos)",
+    "Peces":"Carpas",
+    "Anfibios":"Lisorofios (extintos)",
     "Aves":"P\u00e1jaros carpinteros"
   },
   {
-    "Id":100,
-    "Lider":4,
-    "Mam\u00edferos":"Orcas",
-    "Reptiles":"Tortugas gal\u00e1pagos",
+    "Id":69,
+    "Lider":17,
+    "Mam\u00edferos":"Delfines",
+    "Reptiles":"Tortugas terrestres",
+    "Peces":"Tiburones",
+    "Anfibios":"Ajolotes",
+    "Aves":"Gaviotas"
+  },
+  {
+    "Id":70,
+    "Lider":67,
+    "Mam\u00edferos":"Caballos",
+    "Reptiles":"Pterosaurios (extintos)",
+    "Peces":"Koi japoneses",
+    "Anfibios":"Lisorofios (extintos)",
+    "Aves":"Pavos"
+  },
+  {
+    "Id":71,
+    "Lider":94,
+    "Mam\u00edferos":"Ovejas",
+    "Reptiles":"Boas constrictoras",
+    "Peces":"Koi japoneses",
+    "Anfibios":"Sapos comunes",
+    "Aves":"Tucanes"
+  },
+  {
+    "Id":72,
+    "Lider":101,
+    "Mam\u00edferos":"Ovejas",
+    "Reptiles":"Dinosaurios (extintos)",
     "Peces":"Esturiones",
+    "Anfibios":"Proteos",
+    "Aves":"Avestruces"
+  },
+  {
+    "Id":73,
+    "Lider":91,
+    "Mam\u00edferos":"Rinocerontes",
+    "Reptiles":"Basiliscos",
+    "Peces":"Koi japoneses",
+    "Anfibios":"Ranas arco\u00edris",
+    "Aves":"Canarios"
+  },
+  {
+    "Id":74,
+    "Lider":64,
+    "Mam\u00edferos":"Perros",
+    "Reptiles":"Luciones",
+    "Peces":"Peces sapo",
+    "Anfibios":"Salamandras gigantes chinas",
+    "Aves":"Gaviotas"
+  },
+  {
+    "Id":75,
+    "Lider":25,
+    "Mam\u00edferos":"Seres humanos",
+    "Reptiles":"Iguanas",
+    "Peces":"Barracudas",
+    "Anfibios":"Salamandras sin pulm\u00f3n",
+    "Aves":"Pel\u00edcanos"
+  },
+  {
+    "Id":76,
+    "Lider":15,
+    "Mam\u00edferos":"Chimpanc\u00e9s",
+    "Reptiles":"Lagartos voladores australianos",
+    "Peces":"Bacalaos",
+    "Anfibios":"Ranas arco\u00edris",
+    "Aves":"Faisanes"
+  },
+  {
+    "Id":77,
+    "Lider":8,
+    "Mam\u00edferos":"Gorilas",
+    "Reptiles":"Tortugas acu\u00e1ticas",
+    "Peces":"Peces globo",
+    "Anfibios":"Ranas de Darwin",
+    "Aves":"Cuervos"
+  },
+  {
+    "Id":78,
+    "Lider":9,
+    "Mam\u00edferos":"Vacas",
+    "Reptiles":"V\u00edboras",
+    "Peces":"Tiburones",
     "Anfibios":"Sapos gigantes",
+    "Aves":"Patos"
+  },
+  {
+    "Id":79,
+    "Lider":101,
+    "Mam\u00edferos":"Ratones",
+    "Reptiles":"Camaleones",
+    "Peces":"Atunes",
+    "Anfibios":"Sapos corredores",
+    "Aves":"Pavorreales"
+  },
+  {
+    "Id":80,
+    "Lider":44,
+    "Mam\u00edferos":"Perros",
+    "Reptiles":"Boas constrictoras",
+    "Peces":"Tiburones",
+    "Anfibios":"Necturos",
+    "Aves":"Buitres"
+  },
+  {
+    "Id":81,
+    "Lider":44,
+    "Mam\u00edferos":"Leones",
+    "Reptiles":"Mosasaurios (extintos)",
+    "Peces":"Barracudas",
+    "Anfibios":"Salamandras sin pulm\u00f3n",
+    "Aves":"Pel\u00edcanos"
+  },
+  {
+    "Id":82,
+    "Lider":33,
+    "Mam\u00edferos":"Jirafas",
+    "Reptiles":"Cocodrilos",
+    "Peces":"Lenguados",
+    "Anfibios":"Lisorofios (extintos)",
+    "Aves":"\u00c1guilas"
+  },
+  {
+    "Id":83,
+    "Lider":34,
+    "Mam\u00edferos":"Gorilas",
+    "Reptiles":"Monstruos de Gila",
+    "Peces":"Lenguados",
+    "Anfibios":"Ranas venenosas",
+    "Aves":"Loros"
+  },
+  {
+    "Id":84,
+    "Lider":73,
+    "Mam\u00edferos":"Elefantes",
+    "Reptiles":"Alig\u00e1tores",
+    "Peces":"Pira\u00f1as",
+    "Anfibios":"Sapos de ca\u00f1a venenosos",
+    "Aves":"Guacamayas"
+  },
+  {
+    "Id":85,
+    "Lider":79,
+    "Mam\u00edferos":"Leones",
+    "Reptiles":"Alig\u00e1tores",
+    "Peces":"Celacantos (extintos)",
+    "Anfibios":"Cecilias",
+    "Aves":"Pavorreales"
+  },
+  {
+    "Id":86,
+    "Lider":63,
+    "Mam\u00edferos":"Leones",
+    "Reptiles":"Mosasaurios (extintos)",
+    "Peces":"Celacantos (extintos)",
+    "Anfibios":"Cecilias",
+    "Aves":"Loros"
+  },
+  {
+    "Id":87,
+    "Lider":83,
+    "Mam\u00edferos":"Perros",
+    "Reptiles":"Camaleones",
+    "Peces":"Peces sapo",
+    "Anfibios":"Salamandras gigantes chinas",
+    "Aves":"C\u00f3ndores"
+  },
+  {
+    "Id":88,
+    "Lider":100,
+    "Mam\u00edferos":"Ovejas",
+    "Reptiles":"Lagartijas comunes",
+    "Peces":"Koi japoneses",
+    "Anfibios":"Ranas de Seychelles",
+    "Aves":"Loros"
+  },
+  {
+    "Id":89,
+    "Lider":12,
+    "Mam\u00edferos":"Ballenas",
+    "Reptiles":"V\u00edboras",
+    "Peces":"Peces vela",
+    "Anfibios":"Gallipatos",
+    "Aves":"Loros"
+  },
+  {
+    "Id":90,
+    "Lider":87,
+    "Mam\u00edferos":"Ovejas",
+    "Reptiles":"Alig\u00e1tores",
+    "Peces":"Barracudas",
+    "Anfibios":"Sapos comunes",
+    "Aves":"Patos"
+  },
+  {
+    "Id":91,
+    "Lider":16,
+    "Mam\u00edferos":"Vacas",
+    "Reptiles":"Basiliscos",
+    "Peces":"Barracudas",
+    "Anfibios":"Cecilias",
+    "Aves":"Pavos"
+  },
+  {
+    "Id":92,
+    "Lider":64,
+    "Mam\u00edferos":"Chimpanc\u00e9s",
+    "Reptiles":"Tortugas acu\u00e1ticas",
+    "Peces":"Pira\u00f1as",
+    "Anfibios":"Ranas de Darwin",
+    "Aves":"Cig\u00fce\u00f1as"
+  },
+  {
+    "Id":93,
+    "Lider":20,
+    "Mam\u00edferos":"Seres humanos",
+    "Reptiles":"Tortugas terrestres",
+    "Peces":"Peces espada",
+    "Anfibios":"Sapos gigantes",
+    "Aves":"Guacamayas"
+  },
+  {
+    "Id":94,
+    "Lider":30,
+    "Mam\u00edferos":"Chimpanc\u00e9s",
+    "Reptiles":"Monstruos de Gila",
+    "Peces":"Peces globo",
+    "Anfibios":"Sapos corredores",
+    "Aves":"Colibr\u00edes"
+  },
+  {
+    "Id":95,
+    "Lider":21,
+    "Mam\u00edferos":"Seres humanos",
+    "Reptiles":"Tu\u00e1taras de Nueva Zelanda",
+    "Peces":"Peces payaso",
+    "Anfibios":"Ranas arco\u00edris",
+    "Aves":"Lechuzas"
+  },
+  {
+    "Id":96,
+    "Lider":75,
+    "Mam\u00edferos":"Ballenas",
+    "Reptiles":"Mosasaurios (extintos)",
+    "Peces":"Lenguados",
+    "Anfibios":"Ranas de Seychelles",
+    "Aves":"Cig\u00fce\u00f1as"
+  },
+  {
+    "Id":97,
+    "Lider":79,
+    "Mam\u00edferos":"Rinocerontes",
+    "Reptiles":"Cocodrilos",
+    "Peces":"Peces abisales",
+    "Anfibios":"Ajolotes",
+    "Aves":"Loros"
+  },
+  {
+    "Id":98,
+    "Lider":14,
+    "Mam\u00edferos":"Canguros",
+    "Reptiles":"Cocodrilos",
+    "Peces":"Peces abisales",
+    "Anfibios":"Ranas de Seychelles",
+    "Aves":"Avestruces"
+  },
+  {
+    "Id":99,
+    "Lider":34,
+    "Mam\u00edferos":"Cabras",
+    "Reptiles":"Tu\u00e1taras de Nueva Zelanda",
+    "Peces":"Peces sapo",
+    "Anfibios":"Ranas de Seychelles",
+    "Aves":"Canarios"
+  },
+  {
+    "Id":100,
+    "Lider":16,
+    "Mam\u00edferos":"Caballos",
+    "Reptiles":"Luciones",
+    "Peces":"Peces abisales",
+    "Anfibios":"Ranas de Seychelles",
     "Aves":"Gallinas"
   }
 ]
