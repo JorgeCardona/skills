@@ -69,8 +69,6 @@ Repository with projects especially focused on Computer Science and Natural Scie
 ┃ ┃ ┣ 📂test_n
 ┃ ┃ ┃ ┗ 🍄 use_case_n.py
 ┃ ┃ ┃ ┗ 🍄 service_n.py
-┗ 📂requirements [package]
-┃ ┗ 📄 requirements.txt
 ┗ 📜 README.md
 ┗ ⚠️ .gitignore
 ```
