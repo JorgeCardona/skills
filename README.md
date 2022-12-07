@@ -9,56 +9,56 @@ Repository with projects especially focused on Computer Science and Natural Scie
 ┗ 📂application[package]
 ┃ ┣ main.py[__main__]
 ┃ ┣ 📂configuration
-┃ ┣ ┗ 🏩app_configuration.py
+┃ ┣ ┗ 🏩 app_configuration.py
 ┃ ┣ 📂log
-┃ ┣ ┗ 💬logging.log
+┃ ┣ ┗ 💬 logging.log
 ┃ ┣ 📂htmlcov
-┃ ┣ ┗ 📜main_py.html
+┃ ┣ ┗ 📜 main_py.html
 ┃ ┣ 📂utils
-┃ ┣ ┗ 🐍script.py
-┃ ┣ ┗ 🎰file.yaml
-┃ ┣ ┗ 📜image.jpg
+┃ ┣ ┗ 🐍 script.py
+┃ ┣ ┗ 🎰 file.yaml
+┃ ┣ ┗ 📜 image.jpg
 ┃ ┣ 📂domain[package]
 ┃ ┃ ┣ 📂models[package]
 ┃ ┃ ┃ ┣ 📂entity_one
-┃ ┃ ┃ ┃ ┗ 🐍Entity_ONE.py
+┃ ┃ ┃ ┃ ┗ 🐍 Entity_ONE.py
 ┃ ┃ ┃ ┣ 📂entity_two
-┃ ┃ ┃ ┃ ┗ 🐍Entity_TWO.py
+┃ ┃ ┃ ┃ ┗ 🐍 Entity_TWO.py
 ┃ ┃ ┃ ┣ 📂entity_n
-┃ ┃ ┃ ┃ ┗ 🐍Entity_N.py
+┃ ┃ ┃ ┃ ┗ 🐍 Entity_N.py
 ┃ ┃ ┣ 📂interfaces[package]
 ┃ ┃ ┃ ┗ 📂repository[package]
-┃ ┃ ┃ ┃ ┃ ┗ 🐟database_method_Entity_ONE.py
+┃ ┃ ┃ ┃ ┃ ┗ 🐟 database_method_Entity_ONE.py
 ┃ ┃ ┃ ┃ ┣ 📂entity_two
-┃ ┃ ┃ ┃ ┃ ┗ 🐟database_method_Entity_TWO.py
+┃ ┃ ┃ ┃ ┃ ┗ 🐟 database_method_Entity_TWO.py
 ┃ ┃ ┃ ┃ ┣ 📂entity_n
-┃ ┃ ┃ ┃ ┃ ┗ 🐟database_method_Entity_N.py
+┃ ┃ ┃ ┃ ┃ ┗ 🐟 database_method_Entity_N.py
 ┃ ┃ ┃ ┗ 📂business[package]
 ┃ ┃ ┃ ┃ ┣ 📂entity_one
-┃ ┃ ┃ ┃ ┃ ┗ 🐦business_method_Entity_ONE.py
+┃ ┃ ┃ ┃ ┃ ┗ 🐦 business_method_Entity_ONE.py
 ┃ ┃ ┃ ┃ ┣ 📂entity_two
-┃ ┃ ┃ ┃ ┃ ┗ 🐦business_method_Entity_TWO.py
+┃ ┃ ┃ ┃ ┃ ┗ 🐦 business_method_Entity_TWO.py
 ┃ ┃ ┃ ┃ ┣ 📂entity_n
-┃ ┃ ┃ ┃ ┃ ┗ 🐦business_method_Entity_N.py
+┃ ┃ ┃ ┃ ┃ ┗ 🐦 business_method_Entity_N.py
 ┃ ┃ ┣ 📂usecases[package]
 ┃ ┃ ┃ ┣ 📂entity_one
-┃ ┃ ┃ ┃ ┗ 🎎use_case_implementation_business_repository_logic_Entity_ONE.py
+┃ ┃ ┃ ┃ ┗ 🎎 use_case_implementation_business_repository_logic_Entity_ONE.py
 ┃ ┃ ┃ ┣ 📂entity_two
-┃ ┃ ┃ ┃ ┗ 🎎use_case_implementation_business_repository_logic_Entity_TWO.py
+┃ ┃ ┃ ┃ ┗ 🎎 use_case_implementation_business_repository_logic_Entity_TWO.py
 ┃ ┃ ┃ ┣ 📂entity_n
-┃ ┃ ┃ ┃ ┗ 🎎use_case_implementation_business_repository_logic_Entity_N.py
+┃ ┃ ┃ ┃ ┗ 🎎 use_case_implementation_business_repository_logic_Entity_N.py
 ┃ ┃ ┣ 📂services[package]
 ┃ ┃ ┃ ┣ 📂entity_one
-┃ ┃ ┃ ┃ ┗ ✈️services_use_case_Entity_ONE.py
+┃ ┃ ┃ ┃ ┗ ✈️ services_use_case_Entity_ONE.py
 ┃ ┃ ┃ ┣ 📂entity_two
-┃ ┃ ┃ ┃ ┗ ✈️services_use_case_Entity_TWO.py
+┃ ┃ ┃ ┃ ┗ ✈️ services_use_case_Entity_TWO.py
 ┃ ┃ ┃ ┣ 📂entity_n
-┃ ┃ ┃ ┃ ┗ ✈️services_use_case_Entity_N.py
+┃ ┃ ┃ ┃ ┗ ✈️ services_use_case_Entity_N.py
 ┗ 📂deployment[package]
-┃ ┗ 🐳Dockerfile
-┃ ┗ 🎰Manifest.yaml
+┃ ┗ 🐳 Dockerfile
+┃ ┗ 🎰 Manifest.yaml
 ┗ 📂requirements[package]
-┃ ┗ 📄requirements.txt
+┃ ┗ 📄 requirements.txt
 ┗ 📂test[package]
 ┃ ┃ ┣ 📂test_one
 ┃ ┃ ┃ ┗ 🍄 use_case_one.py
@@ -70,9 +70,9 @@ Repository with projects especially focused on Computer Science and Natural Scie
 ┃ ┃ ┃ ┗ 🍄 use_case_n.py
 ┃ ┃ ┃ ┗ 🍄 service_n.py
 ┗ 📂requirements[package]
-┃ ┗ 📄requirements.txt
-┗ 📜README.md
-┗ ⚠️.gitignore
+┃ ┗ 📄 requirements.txt
+┗ 📜 README.md
+┗ ⚠️ .gitignore
 ```
 
 # Application
