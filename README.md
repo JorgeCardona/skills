@@ -3,6 +3,29 @@
 Repository with projects especially focused on Computer Science and Natural Sciences.
 
 # ARCHITECTURE SCAFFOLD
+
+```
+📦jorge_cardona_project [project_directory]
+┗ 📂application [package]
+┃ ┣ main.py [__main__]
+┃ ┣ 📂configuration
+┃ ┣ 📂log
+┃ ┣ 📂htmlcov
+┃ ┣ 📂utils
+┃ ┣ 📂domain [package]
+┃ ┃ ┣ 📂models [package]
+┃ ┃ ┣ 📂interfaces [package]
+┃ ┃ ┃ ┗ 📂repository [package]
+┃ ┃ ┃ ┗ 📂business [package]
+┃ ┃ ┣ 📂usecases [package]
+┃ ┃ ┣ 📂services [package]
+┗ 📂deployment [package]
+┗ 📂requirements [package]
+┗ 📂test [package]
+┗ 📜 README.md
+┗ ⚠️ .gitignore
+```
+
 # PROJECT PACKAGES STRUCTURE
 ```
 📦jorge_cardona_project [project_directory]
