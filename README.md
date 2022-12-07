@@ -12,7 +12,6 @@ Repository with projects especially focused on Computer Science and Natural Scie
 ┗ 📜 README.md
 ┗ ⚠️ .gitignore
 ┗ 📂application [package]
-┃ ┣ main.py [__main__]
 ┃ ┣ 📂configuration
 ┃ ┣ 📂log
 ┃ ┣ 📂htmlcov
@@ -24,6 +23,7 @@ Repository with projects especially focused on Computer Science and Natural Scie
 ┃ ┃ ┃ ┗ 📂business [package]
 ┃ ┃ ┣ 📂usecases [package]
 ┃ ┃ ┣ 📂services [package]
+┃ ┣ main.py [__main__]
 ```
 
 # PROJECT PACKAGES STRUCTURE
