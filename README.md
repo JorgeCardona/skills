@@ -27,19 +27,19 @@ Repository with projects especially focused on Computer Science and Natural Scie
 ┃ ┃ ┃ ┣ 📂entity_n
 ┃ ┃ ┃ ┃ ┗ 🐍Entity_N.py
 ┃ ┃ ┣ 📂interfaces[package]
+┃ ┃ ┃ ┗ 📂repository[package]
+┃ ┃ ┃ ┃ ┃ ┗ 🐟database_method_Entity_ONE.py
+┃ ┃ ┃ ┃ ┣ 📂entity_two
+┃ ┃ ┃ ┃ ┃ ┗ 🐟database_method_Entity_TWO.py
+┃ ┃ ┃ ┃ ┣ 📂entity_n
+┃ ┃ ┃ ┃ ┃ ┗ 🐟database_method_Entity_N.py
 ┃ ┃ ┃ ┗ 📂business[package]
 ┃ ┃ ┃ ┃ ┣ 📂entity_one
-┃ ┃ ┃ ┃ ┃ ┗ 🍄business_method_Entity_ONE.py
+┃ ┃ ┃ ┃ ┃ ┗ 🐦business_method_Entity_ONE.py
 ┃ ┃ ┃ ┃ ┣ 📂entity_two
-┃ ┃ ┃ ┃ ┃ ┗ 🍄business_method_Entity_TWO.py
+┃ ┃ ┃ ┃ ┃ ┗ 🐦business_method_Entity_TWO.py
 ┃ ┃ ┃ ┃ ┣ 📂entity_n
-┃ ┃ ┃ ┃ ┃ ┗ 🍄business_method_Entity_N.py
-┃ ┃ ┃ ┗ 📂repository[package]
-┃ ┃ ┃ ┃ ┃ ┗ 🐦database_method_Entity_ONE.py
-┃ ┃ ┃ ┃ ┣ 📂entity_two
-┃ ┃ ┃ ┃ ┃ ┗ 🐦database_method_Entity_TWO.py
-┃ ┃ ┃ ┃ ┣ 📂entity_n
-┃ ┃ ┃ ┃ ┃ ┗ 🐦database_method_Entity_N.py
+┃ ┃ ┃ ┃ ┃ ┗ 🐦business_method_Entity_N.py
 ┃ ┃ ┣ 📂usecases[package]
 ┃ ┃ ┃ ┣ 📂entity_one
 ┃ ┃ ┃ ┃ ┗ 🎎use_case_implementation_business_repository_logic_Entity_ONE.py
@@ -60,6 +60,17 @@ Repository with projects especially focused on Computer Science and Natural Scie
 ┗ 📂requirements[package]
 ┃ ┗ 📄requirements.txt
 ┗ 📂test[package]
+┃ ┃ ┣ 📂test_one
+┃ ┃ ┃ ┗ 🍄 use_case_one.py
+┃ ┃ ┃ ┗ 🍄 service_one.py
+┃ ┃ ┣ 📂test_two
+┃ ┃ ┃ ┗ 🍄 use_case_two.py
+┃ ┃ ┃ ┗ 🍄 service_two.py
+┃ ┃ ┣ 📂test_n
+┃ ┃ ┃ ┗ 🍄 use_case_n.py
+┃ ┃ ┃ ┗ 🍄 service_n.py
+┗ 📂requirements[package]
+┃ ┗ 📄requirements.txt
 ┗ 📜README.md
 ┗ ⚠️.gitignore
 ```
