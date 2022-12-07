@@ -6,6 +6,11 @@ Repository with projects especially focused on Computer Science and Natural Scie
 
 ```
 📦jorge_cardona_project [project_directory]
+┗ 📂deployment [package]
+┗ 📂requirements [package]
+┗ 📂test [package]
+┗ 📜 README.md
+┗ ⚠️ .gitignore
 ┗ 📂application [package]
 ┃ ┣ main.py [__main__]
 ┃ ┣ 📂configuration
@@ -19,11 +24,6 @@ Repository with projects especially focused on Computer Science and Natural Scie
 ┃ ┃ ┃ ┗ 📂business [package]
 ┃ ┃ ┣ 📂usecases [package]
 ┃ ┃ ┣ 📂services [package]
-┗ 📂deployment [package]
-┗ 📂requirements [package]
-┗ 📂test [package]
-┗ 📜 README.md
-┗ ⚠️ .gitignore
 ```
 
 # PROJECT PACKAGES STRUCTURE
