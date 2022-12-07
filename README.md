@@ -9,6 +9,10 @@ Repository with projects especially focused on Computer Science and Natural Scie
 ┃ ┣ main.py[__main__]
 ┃ ┣ 📂configuration
 ┃ ┣ ┗ 📜app_configuration.py
+┃ ┣ 📂log
+┃ ┣ ┗ 📜logging.log
+┃ ┣ 📂htmlcov
+┃ ┣ ┗ 📜main_py.html
 ┃ ┣ 📂utils
 ┃ ┣ ┗ 📜script.py
 ┃ ┣ ┗ 📜file.yaml
@@ -64,6 +68,12 @@ Directory that contains the packages with the application code.
 
 # Configuration
 Contains all configuration files for the Application
+
+# Log
+Save information about the application log.
+
+# htmlcov
+Save unit testing coverage information about the application code.
 
 # Utils
 Contains transversal resources for the application, that is not possible to include in other layers.
