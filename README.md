@@ -19,7 +19,7 @@ Repository with projects especially focused on Computer Science and Natural Scie
 ┃ ┣ 📂domain [package]
 ┃ ┃ ┣ 📂models [package]
 ┃ ┃ ┣ 📂interfaces [package]
-┃ ┃ ┃ ┗ 📂repository [package]
+┃ ┃ ┃ ┗ 📂repositories [package]
 ┃ ┃ ┃ ┗ 📂business [package]
 ┃ ┃ ┣ 📂usecases [package]
 ┃ ┃ ┣ 📂services [package]
@@ -50,33 +50,33 @@ Repository with projects especially focused on Computer Science and Natural Scie
 ┃ ┃ ┃ ┣ 📂entity_n
 ┃ ┃ ┃ ┃ ┗ 🐍 Entity_N.py
 ┃ ┃ ┣ 📂interfaces [package]
-┃ ┃ ┃ ┗ 📂repository [package]
-┃ ┃ ┃ ┃ ┣ 📂model_one
+┃ ┃ ┃ ┗ 📂repositories [package]
+┃ ┃ ┃ ┃ ┣ 📂repository_model_one
 ┃ ┃ ┃ ┃ ┃ ┗ 🐟 database_method_model_Entity_ONE.py
-┃ ┃ ┃ ┃ ┣ 📂model_two
+┃ ┃ ┃ ┃ ┣ 📂repository_model_two
 ┃ ┃ ┃ ┃ ┃ ┗ 🐟 database_method_model_Entity_TWO.py
-┃ ┃ ┃ ┃ ┣ 📂model_n
+┃ ┃ ┃ ┃ ┣ 📂repository_model_n
 ┃ ┃ ┃ ┃ ┃ ┗ 🐟 database_method_model_Entity_N.py
 ┃ ┃ ┃ ┗ 📂business [package]
-┃ ┃ ┃ ┃ ┣ 📂model_one
+┃ ┃ ┃ ┃ ┣ 📂business_model_one
 ┃ ┃ ┃ ┃ ┃ ┗ 🐦 business_method_model_Entity_ONE.py
-┃ ┃ ┃ ┃ ┣ 📂model_two
+┃ ┃ ┃ ┃ ┣ 📂business_model_two
 ┃ ┃ ┃ ┃ ┃ ┗ 🐦 business_method_model_Entity_TWO.py
-┃ ┃ ┃ ┃ ┣ 📂model_n
+┃ ┃ ┃ ┃ ┣ 📂business_model_n
 ┃ ┃ ┃ ┃ ┃ ┗ 🐦 business_method_model_Entity_N.py
 ┃ ┃ ┣ 📂usecases [package]
-┃ ┃ ┃ ┣ 📂model_one
+┃ ┃ ┃ ┣ 📂usecase_model_one
 ┃ ┃ ┃ ┃ ┗ 🎎 use_case_implementation_business_repository_logic_model_ONE.py
-┃ ┃ ┃ ┣ 📂model_two
+┃ ┃ ┃ ┣ 📂usecase_model_two
 ┃ ┃ ┃ ┃ ┗ 🎎 use_case_implementation_business_repository_logic_model_TWO.py
-┃ ┃ ┃ ┣ 📂model_n
+┃ ┃ ┃ ┣ 📂usecase_model_n
 ┃ ┃ ┃ ┃ ┗ 🎎 use_case_implementation_business_repository_logic_model_N.py
 ┃ ┃ ┣ 📂services [package]
-┃ ┃ ┃ ┣ 📂model_one
+┃ ┃ ┃ ┣ 📂service_model_one
 ┃ ┃ ┃ ┃ ┗ ✈️ services_use_case_implementation_model_ONE.py
-┃ ┃ ┃ ┣ 📂model_two
+┃ ┃ ┃ ┣ 📂service_model_two
 ┃ ┃ ┃ ┃ ┗ ✈️ services_use_case_implementation_model_TWO.py
-┃ ┃ ┃ ┣ 📂model_n
+┃ ┃ ┃ ┣ 📂service_model_n
 ┃ ┃ ┃ ┃ ┗ ✈️ services_use_case_implementation_model_N.py
 ┗ 📂deployment [package]
 ┃ ┗ 🐳 Dockerfile
@@ -84,13 +84,13 @@ Repository with projects especially focused on Computer Science and Natural Scie
 ┗ 📂requirements [package]
 ┃ ┗ 📄 requirements.txt
 ┗ 📂test [package]
-┃ ┃ ┣ 📂test_one
+┃ ┃ ┣ 📂test_case_one
 ┃ ┃ ┃ ┗ 🍄 use_case_implementation_one.py
 ┃ ┃ ┃ ┗ 🍄 services_use_case_implementation_one.py
-┃ ┃ ┣ 📂test_two
+┃ ┃ ┣ 📂test_case_two
 ┃ ┃ ┃ ┗ 🍄 use_case_implementation_two.py
 ┃ ┃ ┃ ┗ 🍄 services_use_case_implementation_two.py
-┃ ┃ ┣ 📂test_n
+┃ ┃ ┣ 📂test_case_n
 ┃ ┃ ┃ ┗ 🍄 use_case_implementation_n.py
 ┃ ┃ ┃ ┗ 🍄 services_use_case_implementation_n.py
 ┗ 📜 README.md
