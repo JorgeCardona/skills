@@ -208,6 +208,16 @@ def limpiar_cache_variables_xcom(session=None):
 ########################################################################################################################################################################
 from airflow.decorators import dag, task
 
+# funciones que se llaman al terminar la tarea con exito o si falla la tarea
+def task_failure_alert(context):
+    print(f"LA TAREA {context['task']} HA FALLADO, {context['run_id']}, REVISE EL LOG PARA MAS DETALLES...")
+
+def dag_success_alert(context):
+    print('el contexto es', context)
+    print(f"DAG HA COMPLETADO CON EXITO, run_id: {context['run_id']} Y LA TAREA: {context['task']}")
+    
+    
+    
 @dag(
     dag_id="funcion_como_parametro_elimina_xcom",
     description='descripcion del dag creado',
@@ -221,18 +231,19 @@ from airflow.decorators import dag, task
     default_args={
                 "dag_owner": "https://hithub.com/jorgecardona",
                 "owner": "Jorge Cardona",  # This defines the value of the "owner" column in the DAG view of the Airflow UI
-                "retries": 2,  # If a task fails, it will retry 2 times.
+                "retries": 0,  # If a task fails, it will retry 2 times.
                 "retry_delay": timedelta(minutes=3, ), # datetime.timedelta(days=0, seconds=0, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0)
                 "do_xcom_push":False,
                 "do_xcom_pull":False
                 }
     )
 def taskflow():
-    @task
+    
+    @task(on_success_callback=dag_success_alert, on_failure_callback=task_failure_alert)
     def tarea_numero():
         return get_number()
 
-    @task
+    @task(on_success_callback=dag_success_alert, on_failure_callback=task_failure_alert)
     def tarea_duplicar(number):
         
         if number %2 ==0:
@@ -240,12 +251,12 @@ def taskflow():
         
         return get_duplicate_number(number)
 
-    @task
+    @task(on_success_callback=dag_success_alert, on_failure_callback=task_failure_alert)
     def tarea_size(number):
         
         return get_len(number)
 
-    @task
+    @task(on_success_callback=dag_success_alert, on_failure_callback=task_failure_alert)
     def eliminar_variables_xcom():
         limpiar_cache_variables_xcom()
             
@@ -283,7 +294,7 @@ def ejemplo_rutina_llama_codigo():
     
     valor_aleatorio = random.randint(1, 20_000)
     
-    @task(task_id='tarea_extraer_usando_parametro_del_decorador')
+    @task(task_id='tarea_extraer_usando_parametro_del_decorador', on_success_callback=dag_success_alert, on_failure_callback=task_failure_alert)
     def tarea_numero(ti=None):
         # guarda el valor de retorno de VALUE=mostrar(valor_aleatorio) en la key DESCARGAR_DATOS
         ti.xcom_push(key='OBTENER_NUMERO', value=get_number())
@@ -291,7 +302,7 @@ def ejemplo_rutina_llama_codigo():
         # valor de retorno para la tarea
         return valor_aleatorio
 
-    @task
+    @task(on_success_callback=dag_success_alert, on_failure_callback=task_failure_alert)
     def tarea_duplicar(ti=None):
         
         # obtiene el valor que la tarea con id task_ids, "tarea_extraer" subio al xcom
@@ -305,14 +316,14 @@ def ejemplo_rutina_llama_codigo():
         
         return result
  
-    @task
+    @task(on_success_callback=dag_success_alert, on_failure_callback=task_failure_alert)
     def tarea_size(ti=None):
         
         result = ti.xcom_pull(task_ids='tarea_duplicar', key='DUPLICAR_NUMERO')
         
         return get_len(result)
     
-    @task
+    @task(on_success_callback=dag_success_alert, on_failure_callback=task_failure_alert)
     def eliminar_variables_xcom():
         limpiar_cache_variables_xcom()
 
@@ -366,20 +377,31 @@ with DAG(
     catchup=False,
 ) as dag:
     number_operator = PythonOperator(
-        task_id="mumero_operator_task_id", python_callable=get_number_ti
+        task_id="mumero_operator_task_id", 
+        python_callable=get_number_ti, 
+        on_success_callback=dag_success_alert, 
+        on_failure_callback=task_failure_alert
     )
 
     duplicate_operator = PythonOperator(
-        task_id="duplicado_operator_task_id", python_callable=get_duplicate_number_ti
+        task_id="duplicado_operator_task_id", 
+        python_callable=get_duplicate_number_ti, 
+        on_success_callback=dag_success_alert, 
+        on_failure_callback=task_failure_alert
     )
 
     len_operator = PythonOperator(
-        task_id="largo_operator_task_id", python_callable=get_len_ti
+        task_id="largo_operator_task_id", 
+        python_callable=get_len_ti, 
+        on_success_callback=dag_success_alert, 
+        on_failure_callback=task_failure_alert
     )
 
     delete_xcom = PythonOperator(
         task_id="delete_xcom",
-        python_callable = limpiar_cache_variables_xcom,
+        python_callable = limpiar_cache_variables_xcom, 
+        on_success_callback=dag_success_alert,
+        on_failure_callback=task_failure_alert,
         dag=dag
     )
 	  
