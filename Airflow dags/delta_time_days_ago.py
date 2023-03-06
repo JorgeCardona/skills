@@ -34,6 +34,7 @@ delta()
     schedule_interval='*/5 * * * *', # https://crontab.guru/#*/5_*_*_*_*
     start_date=datetime(2023, 3, 5, 20, 39, 0), 
     end_date=datetime(2029, 12, 11),
+    # ponerse al dia
     catchup=True, # backfilling process ESTA POR DEFECTO en True Y SE EJECUTA
     max_active_runs=5 # es la maxima cantidad de DAGs corriendo cuando hay un backfilling, para no saturar la maquina y acabar con los recursos
     )
@@ -58,6 +59,12 @@ from airflow.utils.dates import days_ago
     schedule_interval='@daily', # https://docs.python.org/es/3/library/datetime.html#timedelta-objects
     start_date=days_ago(5), 
     end_date=datetime(2029, 12, 11),
+    # especifique cuánto tiempo debe estar activo un DagRun antes de que se agote el tiempo de espera o falle, para que se puedan crear nuevos DagRun.
+    # El tiempo de espera solo se aplica para DagRuns programados.
+    dagrun_timeout = timedelta(minutes=5),
+    concurrency=10, #define cuántas instancias al mismo tiempo RUNNING de tareas puede tener un DAG, más allá del cual las cosas se ponen en cola.
+    max_active_tasks=5, # el número de instancias de tareas permitidas para ejecutarse simultáneamente
+    max_active_runs=3, # define cuántas instancias RUNNING simultáneas de un DAG puede haber.
     #catchup=True, # backfilling process ESTA POR DEFECTO en True Y SE EJECUTA
     )
 def days():
