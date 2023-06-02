@@ -14,13 +14,13 @@ import subprocess
 def ejecutar_comando_shell(comando='git branch', response=False):
 
     print('############################################# COMANDO A EJECUTAR #############################################')
-    print(red(comando, ['reverse','bold']))
+    print(cyan(comando, ['reverse','bold']))
     
     try:
         resultado_comando_ejecutado = subprocess.check_output(comando, shell=True, text=True)
     except Exception:
         print('&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& SE HA GENERADO UNA EXCEPCION &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&')
-        print('EL COMANDO {comando} NO SE PUDO EJECUTAR'.format(comando=comando))
+        print(red('EL COMANDO {comando} NO SE PUDO EJECUTAR'.format(comando=comando)))
         print('&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& FINAL DE EXCEPCION GENERADA &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&')
     else:
         print('####################################### RESULTADO DE COMANDO EJECUTADO #######################################')
@@ -54,12 +54,19 @@ def crear_fecha():
 
     return ts
 
-def copiar_archivo(nombre_del_repositorio, archivo):
+def copiar_archivo(nombre_del_repositorio, archivo, recursos=False):
     
     import os
     import shutil
     source = '{source}\{archivo}'.format(source=os.getcwd().split(nombre_del_repositorio,1)[0], archivo=archivo)
+    
+    if recursos:
+        source = '{source}\{archivo}'.format(source=os.getcwd(), archivo=archivo).replace(nombre_del_repositorio, 'recursos')
+    
     target = '{target}\{archivo}'.format(target=os.getcwd(), archivo=archivo)
+    
+    print('source', source)
+    print('target', target)
     
     shutil.copyfile(source, target)
     
