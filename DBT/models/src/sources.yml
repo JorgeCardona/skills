@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: tabla_referencia
+    description: Fuente de datos de clientes
+    schema: dbt
+    database: dbt
+    tables:
+       - name: clientes_alias # se puede usar como un alias en la source
+         identifier: tabla_query_directo_flight_logs # debe ser el nombrede la tabla en la base de datos
+
+  - name: vista_referencia
+    description: Fuente de datos de órdenes
+    schema: dbt
+    database: dbt
+    tables:
+      - name: vista_query_con_with_flight_logs
+        quoting: 
+          identifier: true

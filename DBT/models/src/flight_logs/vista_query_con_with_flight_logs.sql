@@ -1,7 +1,7 @@
 # alias de tabla a consultar
 WITH SELECT_TEST AS(
 
-SELECT * FROM dbt.flight_logs
+SELECT * FROM {{ ref('tabla_query_directo_flight_logs') }}
 )
 
 # select que crea la vista
