@@ -58,12 +58,12 @@ def copiar_archivo(nombre_del_repositorio, archivo, recursos=False):
     
     import os
     import shutil
-    source = '{source}\{archivo}'.format(source=os.getcwd().split(nombre_del_repositorio,1)[0], archivo=archivo)
+    source = '{source}/{archivo}'.format(source=os.getcwd().split(nombre_del_repositorio,1)[0], archivo=archivo)
     
     if recursos:
-        source = '{source}\{archivo}'.format(source=os.getcwd(), archivo=archivo).replace(nombre_del_repositorio, 'recursos')
+        source = '{source}/{archivo}'.format(source=os.getcwd(), archivo=archivo).replace(nombre_del_repositorio, 'recursos')
     
-    target = '{target}\{archivo}'.format(target=os.getcwd(), archivo=archivo)
+    target = '{target}/{archivo}'.format(target=os.getcwd(), archivo=archivo)
     
     print('source', source)
     print('target', target)
@@ -215,7 +215,7 @@ def crear_alias_y_validarlos(tipo='local'):
     "git config --global alias.br branch",
     "git config --global alias.ci commit",
     "git config --global alias.st status",
-    'git config --global alias.aliases "config --get-regexp {alias}"'.format(alias="'^alias\\.'")
+    'git config --global alias.aliases "config --get-regexp {alias}"'.format(alias="'^alias\.'")
                   ]
      
     comandos_para_alias = local if tipo=='local' else globall
