@@ -173,6 +173,8 @@ SELECT * FROM product WHERE date >= '2022-01-01' AND date < '2023-01-01';
 ## Consultar datos de la partición product_p_2022
 ```sql
 SELECT * FROM product_p_2022;
+```
+
 ## Plan de ejecución para la partición product_p_2022
 ```sql
 EXPLAIN (ANALYZE, VERBOSE, FORMAT JSON)
@@ -214,12 +216,15 @@ SELECT * FROM product WHERE date >= '2024-01-01' AND date < '2025-01-01';
 ## Consultar datos de la partición product_p_after_2024
 ```sql
 SELECT * FROM product WHERE date >= '2025-01-01';
-## Consultar datos de la partición product_p_after_2024
 ```
 
-SELECT * FROM product_p_after_2024;
+## Consultar datos de la partición product_p_after_2024
 ```sql
+SELECT * FROM product_p_after_2024;
+```
+
 ## Plan de ejecución para la partición product_p_after_2024
+```sql
 EXPLAIN (ANALYZE, VERBOSE, FORMAT JSON)
 SELECT * FROM product WHERE date >= '2025-01-01';
 ```
