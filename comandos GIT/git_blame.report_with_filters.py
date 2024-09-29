@@ -32,7 +32,7 @@ def git_blame_with_commit_details(file_path, print_details=False):
         elif line.startswith('author-time '):
             # Convert the author time (UNIX timestamp) to YYYY-MM-DD format
             timestamp = int(line[12:].strip())
-            current_commit['commit_date'] = datetime.utcfromtimestamp(timestamp).strftime('%Y-%m-%d')
+            current_commit['commit_date'] = datetime.utcfromtimestamp(timestamp).strftime('%a %b %d %H:%M:%S %Y -0500')
         elif line.startswith('summary '):
             current_commit['commit_message'] = line[8:].strip()
         elif re.match(r'^[0-9a-f]{40} ', line):
@@ -235,10 +235,10 @@ def generate_blame_html_report(report_details, file, output_html='blame_report.h
     """
     
     # Save the HTML file with ISO-8859-1 encoding
-    with open(output_html, 'w', encoding='ISO-8859-1') as file:
+    with open(output_html, 'w', encoding='utf-8') as file:
         file.write(html_content)
 
-    print(f"Styled GIT BALME HTML report with sorting and filters generated: {output_html}")
+    print(f"Styled GIT BLAME HTML report with sorting and filters generated: {output_html}")
 
 # Usage of the functions
 file_path = 'main.py'
