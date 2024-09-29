@@ -234,8 +234,8 @@ def generate_blame_html_report(report_details, file, output_html='blame_report.h
     </html>
     """
     
-    # Save the HTML file with utf-8 encoding
-    with open(output_html, 'w', encoding='utf-8') as file:
+    # Save the HTML file with ISO-8859-1 encoding
+    with open(output_html, 'w', encoding='ISO-8859-1') as file:
         file.write(html_content)
 
     print(f"Styled GIT BALME HTML report with sorting and filters generated: {output_html}")
