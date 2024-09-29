@@ -1,6 +1,7 @@
 import subprocess
 import re
 from datetime import datetime
+import os
 
 def git_blame_with_commit_details(file_path, print_details=False):
     """
@@ -57,20 +58,71 @@ def git_blame_with_commit_details(file_path, print_details=False):
 
     return details_list  # Return the list of dictionaries
 
-def generate_blame_html_report(report_details, file, output_html='blame_report.html'):
+def generate_report_name_and_report_directory(directory_to_save_report, report_name_to_save, file_to_read):
     """
-    Generates an HTML report from the commit details of a file with column filters, sorting, and styled headers.
+    Generates the name and full directory path for saving an HTML report.
+
+    This function creates the specified directory if it does not exist and constructs 
+    a report file name using the provided report name and file name.
 
     Parameters:
-    report_details (list): A list of dictionaries containing commit details for each line.
-    file (str): The name of the file for which the report is generated.
-    output_html (str): The name of the output HTML file. Default is 'blame_report.html'.
+    directory_to_save_report (str): The relative or absolute path to the directory where the report will be saved.
+    report_name_to_save (str): The base name for the report file.
+    file_to_read (str): The name of the file related to the report, which will be appended to the report name.
+
+    Returns:
+    tuple: A tuple containing:
+        - report_name (str): The complete name of the report file, including the .html extension.
+        - report_directory (str): The full path to the report file, including the directory and file name.
     """
+    
+    current_directory = os.getcwd()
+    final_directory = f'{current_directory}/{directory_to_save_report}'
+
+    # Create the directory if it does not exist
+    if not os.path.exists(final_directory):
+        os.makedirs(final_directory)
+
+    report_name = f'{report_name_to_save}_{file_to_read}.html'
+
+    report_directory = os.path.join(final_directory, report_name)
+
+    return report_name, report_directory
+
+
+def generate_blame_html_report(report_details, file_to_read, directory_to_save_report='/report/blame', report_name_to_save='blame_report'):
+    """
+    Generates an HTML report of Git blame details for a specified file.
+
+    This function creates a styled HTML report containing a table with Git blame information, 
+    including line numbers, content, commit IDs, commit messages, authors, emails, and commit dates.
+    The report allows for filtering and sorting of the displayed data.
+
+    Parameters:
+    report_details (list of dict): A list containing dictionaries with Git blame details for each line, 
+                                    where each dictionary should include:
+        - line_number (int): The line number in the file.
+        - content_line (str): The content of the line.
+        - commit_id (str): The ID of the commit.
+        - commit_message (str): The message associated with the commit.
+        - commit_author (str): The author of the commit.
+        - commit_email (str): The email of the author.
+        - commit_date (str): The date of the commit.
+    file_to_read (str): The name of the file for which the Git blame report is generated.
+    directory_to_save_report (str, optional): The path to the directory where the report will be saved. Defaults to '/report/blame'.
+    report_name_to_save (str, optional): The base name for the report file. Defaults to 'blame_report'.
+
+    Returns:
+    None: The function saves the generated HTML report to the specified directory and prints a confirmation message.
+    """
+    
+    report_name, report_directory = generate_report_name_and_report_directory(directory_to_save_report, report_name_to_save, file_to_read)
+
     # HTML table header with filters, sorting, and styling
     html_content = f"""
     <html>
     <head>
-        <title>Git Blame Report for {file}</title>
+        <title>Git Blame Report for {file_to_read}</title>
         <style>
             body {{
                 font-family: Arial, sans-serif;
@@ -200,7 +252,7 @@ def generate_blame_html_report(report_details, file, output_html='blame_report.h
         </script>
     </head>
     <body>
-        <h1>Git Blame Report for {file}</h1>
+        <h1>Git Blame Report for {file_to_read}</h1>
         <table id="blameTable">
             <tr>
                 <th onclick="sortTable(0)">Line Number<br><input type="text" onkeyup="filterTable(0)" placeholder="Filter by line number"></th>
@@ -235,12 +287,12 @@ def generate_blame_html_report(report_details, file, output_html='blame_report.h
     """
     
     # Save the HTML file with ISO-8859-1 encoding
-    with open(output_html, 'w', encoding='utf-8') as file:
+    with open(report_directory, 'w', encoding='utf-8') as file:
         file.write(html_content)
 
-    print(f"Styled GIT BLAME HTML report with sorting and filters generated: {output_html}")
+    print(f"Styled GIT BLAME HTML report with sorting and filters generated: {report_name}")
 
 # Usage of the functions
-file_path = 'main.py'
-report_details = git_blame_with_commit_details(file_path=file_path)
-generate_blame_html_report(report_details=report_details, file=file_path)
+file_path = 'C:\\Users\\USUARIO\\Documents\\satellite_notifier\\main.py'
+report = git_blame_with_commit_details(file_path, print_details=True)
+generate_blame_html_report(report, 'main.py')
