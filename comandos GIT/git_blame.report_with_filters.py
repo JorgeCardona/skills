@@ -77,7 +77,11 @@ def generate_report_name_and_report_directory(directory_to_save_report, report_n
     """
     
     current_directory = os.getcwd()
-    final_directory = f'{current_directory}/{directory_to_save_report}'
+    final_directory = f'{current_directory}{directory_to_save_report}'
+
+    # Normalize the report directory path to avoid issues on Windows
+    final_directory = final_directory.replace('/', '\\')
+    file_to_read = file_to_read.replace(':', '_').replace('/', '\\').replace('/', '_').replace('\\', '_')
 
     # Create the directory if it does not exist
     if not os.path.exists(final_directory):
@@ -88,7 +92,6 @@ def generate_report_name_and_report_directory(directory_to_save_report, report_n
     report_directory = os.path.join(final_directory, report_name)
 
     return report_name, report_directory
-
 
 def generate_blame_html_report(report_details, file_to_read, directory_to_save_report='/report/blame', report_name_to_save='blame_report'):
     """
@@ -295,4 +298,4 @@ def generate_blame_html_report(report_details, file_to_read, directory_to_save_r
 # Usage of the functions
 file_path = 'C:\\Users\\USUARIO\\Documents\\satellite_notifier\\main.py'
 report = git_blame_with_commit_details(file_path, print_details=True)
-generate_blame_html_report(report, 'main.py')
+generate_blame_html_report(report, file_path)
