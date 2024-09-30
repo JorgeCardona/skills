@@ -305,10 +305,11 @@ def generate_html_report_history(report_details, file_to_read, directory_to_save
 
     print(f"GIT HISTORY HTML report generated: {report_name_to_save}")
 
-
-
-
-# Example usage
+# Usage of the functions
 file_path = 'C:\\Users\\USUARIO\\Documents\\satellite_notifier\\main.py'
-commit_history = git_history_with_line_changes(file_path=file_path)
-generate_html_report_history(report_details=commit_history, file_to_read=file_path)
+report = git_blame_with_commit_details(file_path, blame_print_details=True)
+generate_blame_html_report(report, file_path)
+
+file_path = 'C:\\Users\\USUARIO\\Documents\\satellite_notifier\\.github\workflows\\main.yml'
+report = git_history_with_line_changes(file_path)
+generate_html_report_history(report, file_path)
