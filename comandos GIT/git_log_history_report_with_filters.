@@ -1,4 +1,5 @@
 import subprocess
+import os
 
 def git_history_with_line_changes(file_path, print_details=False):
     """
@@ -81,7 +82,46 @@ def git_history_with_line_changes(file_path, print_details=False):
 
     return history_list  # Return the list of commit details with line changes
 
-def generate_html_report_history(report_details, file_path, output_html='history_report.html'):
+
+def generate_report_name_and_report_directory(directory_to_save_report, report_name_to_save, file_to_read):
+    """
+    Generates the name and full directory path for saving an HTML report.
+
+    This function creates the specified directory if it does not exist and constructs 
+    a report file name using the provided report name and file name.
+
+    Parameters:
+    directory_to_save_report (str): The relative or absolute path to the directory where the report will be saved.
+    report_name_to_save (str): The base name for the report file.
+    file_to_read (str): The name of the file related to the report, which will be appended to the report name.
+
+    Returns:
+    tuple: A tuple containing:
+        - report_name (str): The complete name of the report file, including the .html extension.
+        - report_directory (str): The full path to the report file, including the directory and file name.
+    """
+    
+    current_directory = os.getcwd()
+    final_directory = f'{current_directory}{directory_to_save_report}'
+
+    # Normalize the report directory path to avoid issues on Windows
+    final_directory = final_directory.replace('/', '\\')
+    file_to_read = file_to_read.replace(':', '_').replace('/', '\\').replace('/', '_').replace('\\', '_')
+
+    # Create the directory if it does not exist
+    if not os.path.exists(final_directory):
+        os.makedirs(final_directory)
+
+    report_name = f'{report_name_to_save}_{file_to_read}.html'
+
+    report_directory = os.path.join(final_directory, report_name)
+    
+    print('final_directory', final_directory)
+    print('report_directory', report_directory)
+
+    return report_name, report_directory
+
+def generate_html_report_history(report_details, file_to_read, directory_to_save_report='/report/log_history', report_name_to_save='history_report'):
     """
     Generates an HTML report based on the commit history details with column filters, sorting, and styled headers.
 
@@ -90,11 +130,13 @@ def generate_html_report_history(report_details, file_path, output_html='history
     file_path (str): The path to the file analyzed.
     output_html (str): The name of the output HTML file. Default is 'history_report.html'.
     """
+
+    report_name, report_directory = generate_report_name_and_report_directory(directory_to_save_report, report_name_to_save, file_to_read)
     # HTML table header with filters, sorting, and styling
     html_content = f"""
     <html>
     <head>
-        <title>Git History Report for {file_path}</title>
+        <title>Git History Report for {file_to_read}</title>
         <style>
             body {{
                 font-family: Arial, sans-serif;
@@ -220,7 +262,7 @@ def generate_html_report_history(report_details, file_path, output_html='history
         </script>
     </head>
     <body>
-        <h1>Git History Report for {file_path}</h1>
+        <h1>Git History Report for {file_to_read}</h1>
         <table id="historyTable">
             <tr>
                 <th onclick="sortTable(0)">Commit ID<br><input type="text" onkeyup="filterTable(0)" placeholder="Filter by commit ID"></th>
@@ -258,13 +300,15 @@ def generate_html_report_history(report_details, file_path, output_html='history
     """
     
     # Save the HTML report to a file with ISO-8859-1 encoding
-    with open(output_html, 'w', encoding='ISO-8859-1') as file:
+    with open(report_directory, 'w', encoding='ISO-8859-1') as file:
         file.write(html_content)
 
-    print(f"GIT HISTORY HTML report generated: {output_html}")
+    print(f"GIT HISTORY HTML report generated: {report_name_to_save}")
+
+
 
 
 # Example usage
-file_path = 'main.py'
+file_path = 'C:\\Users\\USUARIO\\Documents\\satellite_notifier\\main.py'
 commit_history = git_history_with_line_changes(file_path=file_path)
-generate_html_report_history(report_details=commit_history, file_path=file_path)
+generate_html_report_history(report_details=commit_history, file_to_read=file_path)
